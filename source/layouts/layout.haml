@@ -1,0 +1,16 @@
+!!!5
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+
+    %title= data.page.title || "World Peace, etc"
+
+    = stylesheet_link_tag "all"
+    = javascript_include_tag  "all"
+
+    /[if lte IE 8]
+      = stylesheet_link_tag '//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css'
+
+  %body{class: page_classes}
+    = yield

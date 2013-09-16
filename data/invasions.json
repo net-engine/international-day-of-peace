@@ -1,0 +1,760 @@
+{
+  "year": 2008,
+  "country_invaded": "Gaza",
+  "invader": "Israel"
+},
+{
+  "year": 2008,
+  "country_invaded": "Georgia",
+  "invader": "Russia"
+},
+{
+  "year": 2008,
+  "country_invaded": "Anjouan",
+  "invader": "African Union"
+},
+{
+  "year": 2006,
+  "country_invaded": "Somalia",
+  "invader": "Ethiopia"
+},
+{
+  "year": 2006,
+  "country_invaded": "Lebanon",
+  "invader": "Israel"
+},
+{
+  "year": 2003,
+  "country_invaded": "Iraq",
+  "invader": "United States-led coalition"
+},
+{
+  "year": 2001,
+  "country_invaded": "Afghanistan",
+  "invader": "United States-led coalition"
+},
+{
+  "year": 1998,
+  "country_invaded": "Ethiopia",
+  "invader": "Eritrea"
+},
+{
+  "year": 1991,
+  "country_invaded": "Kuwait",
+  "invader": "the United States"
+},
+{
+  "year": 1989,
+  "country_invaded": "Panama",
+  "invader": "the United States"
+},
+{
+  "year": 1988,
+  "country_invaded": "Spratly Islands",
+  "invader": "China"
+},
+{
+  "year": 1983,
+  "country_invaded": "Grenada",
+  "invader": "the United States and allied Caribbean nations"
+},
+{
+  "year": 1982,
+  "country_invaded": "Lebanon",
+  "invader": "Israel"
+},
+{
+  "year": 1979,
+  "country_invaded": "Afghanistan",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1979,
+  "country_invaded": "Thailand",
+  "invader": "Vietnam"
+},
+{
+  "year": 1979,
+  "country_invaded": "Northern Vietnam",
+  "invader": "China"
+},
+{
+  "year": 1979,
+  "country_invaded": "Uganda",
+  "invader": "Tanzania"
+},
+{
+  "year": 1978,
+  "country_invaded": "Cambodia",
+  "invader": "Vietnam"
+},
+{
+  "year": 1975,
+  "country_invaded": "Poulo Wai Island",
+  "invader": "Vietnam"
+},
+{
+  "year": 1975,
+  "country_invaded": "South Vietnam",
+  "invader": "Democratic Republic of North Vietnam"
+},
+{
+  "year": 1974,
+  "country_invaded": "Cyprus",
+  "invader": "Turkey"
+},
+{
+  "year": 1974,
+  "country_invaded": "Paracel Islands",
+  "invader": "China"
+},
+{
+  "year": 1971,
+  "country_invaded": "East Pakistan",
+  "invader": "India"
+},
+{
+  "year": 1965,
+  "country_invaded": "Pakistan",
+  "invader": "India"
+},
+{
+  "year": 1965,
+  "country_invaded": "India",
+  "invader": "Pakistan Army and irregulars"
+},
+{
+  "year": 1965,
+  "country_invaded": "Dominican Republic",
+  "invader": "United States"
+},
+{
+  "year": 1964,
+  "country_invaded": "the Turkish Cypriot Enclave Kokkina",
+  "invader": "Cyprus and Greece"
+},
+{
+  "year": 1962,
+  "country_invaded": "India",
+  "invader": "China"
+},
+{
+  "year": 1961,
+  "country_invaded": "Netherlands New Guinea",
+  "invader": "Indonesia"
+},
+{
+  "year": 1961,
+  "country_invaded": "Goa",
+  "invader": "India"
+},
+{
+  "year": 1956,
+  "country_invaded": "Hungary",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1956,
+  "country_invaded": "Egypt",
+  "invader": "France"
+},
+{
+  "year": 1951,
+  "country_invaded": "South Korea",
+  "invader": "North Korea"
+},
+{
+  "year": 1950,
+  "country_invaded": "North Korea",
+  "invader": "South Korea"
+},
+{
+  "year": 1950,
+  "country_invaded": "Tibet",
+  "invader": "China"
+},
+{
+  "year": 1947,
+  "country_invaded": "Kashmir",
+  "invader": "Pakistan irregulars"
+},
+{
+  "year": 1946,
+  "country_invaded": "Northern Vietnam",
+  "invader": "France"
+},
+{
+  "year": 1945,
+  "country_invaded": "Japanese-occupied Vietnam",
+  "invader": "the Allies"
+},
+{
+  "year": 1945,
+  "country_invaded": "Japanese-controlled Manchuria and Korea",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1945,
+  "country_invaded": "Okinawa, Japan",
+  "invader": "the United States"
+},
+{
+  "year": 1945,
+  "country_invaded": "Poland, Austria and Eastern Germany",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1945,
+  "country_invaded": "Japanese Formosa",
+  "invader": "the United States"
+},
+{
+  "year": 1945,
+  "country_invaded": "Iwo Jima, Japan",
+  "invader": "Allied forces"
+},
+{
+  "year": 1944,
+  "country_invaded": "Western Germany",
+  "invader": "Allied forces"
+},
+{
+  "year": 1944,
+  "country_invaded": "Bulgaria, Yugoslavia",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1944,
+  "country_invaded": "Guam",
+  "invader": "the United States"
+},
+{
+  "year": 1944,
+  "country_invaded": "Southern France",
+  "invader": "the United States"
+},
+{
+  "year": 1944,
+  "country_invaded": "East Asia",
+  "invader": "Japan"
+},
+{
+  "year": 1944,
+  "country_invaded": "Normandy, France",
+  "invader": "the United States, Britain and Canada"
+},
+{
+  "year": 1944,
+  "country_invaded": "Hungary",
+  "invader": "Germany"
+},
+{
+  "year": 1944,
+  "country_invaded": "Marshall Islands",
+  "invader": "the United States"
+},
+{
+  "year": 1943,
+  "country_invaded": "Gilberts and Marshall Islands",
+  "invader": "Japan"
+},
+{
+  "year": 1943,
+  "country_invaded": "Italy",
+  "invader": "the United States, Britain and Canada"
+},
+{
+  "year": 1943,
+  "country_invaded": "Kolombangara in the Solomon Islands",
+  "invader": "Japan"
+},
+{
+  "year": 1943,
+  "country_invaded": "Italy (Sicily",
+  "invader": "Britain, the United States and Canada"
+},
+{
+  "year": 1942,
+  "country_invaded": "Vichy French North Africa",
+  "invader": "the United States"
+},
+{
+  "year": 1942,
+  "country_invaded": "Solomon Islands",
+  "invader": "the United States, Australia and New Zealand"
+},
+{
+  "year": 1942,
+  "country_invaded": "Alaska",
+  "invader": "Japan"
+},
+{
+  "year": 1942,
+  "country_invaded": "Vichy France",
+  "invader": "Germany"
+},
+{
+  "year": 1942,
+  "country_invaded": "Madagascar",
+  "invader": "Allied forces"
+},
+{
+  "year": 1942,
+  "country_invaded": "Indonesia",
+  "invader": "Japan"
+},
+{
+  "year": 1942,
+  "country_invaded": "New Guinea, Dutch New Guinea and Singapore",
+  "invader": "Japan"
+},
+{
+  "year": 1942,
+  "country_invaded": "Solomon Islands",
+  "invader": "Japan"
+},
+{
+  "year": 1941,
+  "country_invaded": "Netherlands East Indies, Guam and Borneo",
+  "invader": "Japan"
+},
+{
+  "year": 1941,
+  "country_invaded": "Wake Island, Hong Kong and Philippines",
+  "invader": "Japan"
+},
+{
+  "year": 1941,
+  "country_invaded": "Malaya and Thailand",
+  "invader": "Japan"
+},
+{
+  "year": 1941,
+  "country_invaded": "the Soviet Union",
+  "invader": "Germany"
+},
+{
+  "year": 1941,
+  "country_invaded": "Vichy Indochina",
+  "invader": "Thailand"
+},
+{
+  "year": 1941,
+  "country_invaded": "Iran",
+  "invader": "the Soviet Union and Britain"
+},
+{
+  "year": 1941,
+  "country_invaded": "Vichy French Syria and Lebanon",
+  "invader": "Australian and Free French forces"
+},
+{
+  "year": 1941,
+  "country_invaded": "Southern French Indochina",
+  "invader": "Japan"
+},
+{
+  "year": 1941,
+  "country_invaded": "Greenland and Iceland",
+  "invader": "the United States"
+},
+{
+  "year": 1941,
+  "country_invaded": "Southern Vietnam",
+  "invader": "Japan"
+},
+{
+  "year": 1940,
+  "country_invaded": "Albania",
+  "invader": "Greece"
+},
+{
+  "year": 1940,
+  "country_invaded": "Egypt, Greece",
+  "invader": "Italy, Germany and Bulgaria"
+},
+{
+  "year": 1940,
+  "country_invaded": "Sudan, Kenya, British Somaliland",
+  "invader": "Italy"
+},
+{
+  "year": 1940,
+  "country_invaded": "Vietnam",
+  "invader": "Japan, destroying the French colony"
+},
+{
+  "year": 1940,
+  "country_invaded": "Iceland",
+  "invader": "Britain"
+},
+{
+  "year": 1940,
+  "country_invaded": "Southern France",
+  "invader": "Italy"
+},
+{
+  "year": 1939,
+  "country_invaded": "Finland",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1939,
+  "country_invaded": "French and Vietnamese-held Spratly Islands",
+  "invader": "Japan"
+},
+{
+  "year": 1939,
+  "country_invaded": "Lithuania, Latvia and Estonia",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1939,
+  "country_invaded": "French and Vietnamese-held Paracel Islands",
+  "invader": "Japan"
+},
+{
+  "year": 1939,
+  "country_invaded": "Poland",
+  "invader": "the Soviet Union"
+},
+{
+  "year": 1939,
+  "country_invaded": "Poland",
+  "invader": "Germany and Slovakia initiating World War II in Europe"
+},
+{
+  "year": 1939,
+  "country_invaded": "Albania",
+  "invader": "Italy"
+},
+{
+  "year": 1938,
+  "country_invaded": "the Soviet Union",
+  "invader": "Japan"
+},
+{
+  "year": 1938,
+  "country_invaded": "Czechoslovakia",
+  "invader": "Germany and Hungary"
+},
+{
+  "year": 1937,
+  "country_invaded": "China",
+  "invader": "Japan"
+},
+{
+  "year": 1935,
+  "country_invaded": "Ethiopia",
+  "invader": "Italy from Italian Eritrea"
+},
+{
+  "year": 1931,
+  "country_invaded": "Chinese Manchuria",
+  "invader": "Japan"
+},
+{
+  "year": 1923,
+  "country_invaded": "Greek Corfu",
+  "invader": "Italy"
+},
+{
+  "year": 1923,
+  "country_invaded": "Germany",
+  "invader": "France and Belgium"
+},
+{
+  "year": 1920,
+  "country_invaded": "Anatolia",
+  "invader": "Greece"
+},
+{
+  "year": 1920,
+  "country_invaded": "Poland",
+  "invader": "Russia"
+},
+{
+  "year": 1919,
+  "country_invaded": "Smyrna",
+  "invader": "Greece"
+},
+{
+  "year": 1919,
+  "country_invaded": "Ukraine and Belarus",
+  "invader": "Bolshevik Russia and Poland"
+},
+{
+  "year": 1916,
+  "country_invaded": "Romania",
+  "invader": "Germany"
+},
+{
+  "year": 1916,
+  "country_invaded": "Vietnam",
+  "invader": "France"
+},
+{
+  "year": 1915,
+  "country_invaded": "Russia",
+  "invader": "Germany and Austria-Hungary"
+},
+{
+  "year": 1915,
+  "country_invaded": "Montenegro",
+  "invader": "Austria-Hungary"
+},
+{
+  "year": 1915,
+  "country_invaded": "Serbia",
+  "invader": "Austria-Hungary, Bulgaria and Germany"
+},
+{
+  "year": 1915,
+  "country_invaded": "Ottoman Empire",
+  "invader": "the United Kingdom and Russia"
+},
+{
+  "year": 1915,
+  "country_invaded": "Serbia",
+  "invader": "Austria-Hungary"
+},
+{
+  "year": 1914,
+  "country_invaded": "Caroline Islands and Marshall Islands",
+  "invader": "Japan"
+},
+{
+  "year": 1914,
+  "country_invaded": "France",
+  "invader": "Germany"
+},
+{
+  "year": 1914,
+  "country_invaded": "German Tsingtao in China",
+  "invader": "Japan and the United Kingdom"
+},
+{
+  "year": 1914,
+  "country_invaded": "German Caroline Islands, Mariana Islands and Marshall Islands",
+  "invader": "Japan"
+},
+{
+  "year": 1914,
+  "country_invaded": "German New Guinea",
+  "invader": "Australia"
+},
+{
+  "year": 1914,
+  "country_invaded": "German Samoa",
+  "invader": "New Zealand"
+},
+{
+  "year": 1914,
+  "country_invaded": "German Kamerun",
+  "invader": "the United Kingdom, France and Belgium"
+},
+{
+  "year": 1914,
+  "country_invaded": "Austro-Hungarian Galicia",
+  "invader": "Russia"
+},
+{
+  "year": 1914,
+  "country_invaded": "Germany",
+  "invader": "Russia"
+},
+{
+  "year": 1914,
+  "country_invaded": "Serbia",
+  "invader": "Austria-Hungary"
+},
+{
+  "year": 1914,
+  "country_invaded": "South Africa",
+  "invader": "Germany"
+},
+{
+  "year": 1914,
+  "country_invaded": "German Togoland",
+  "invader": "France and the United Kingdom"
+},
+{
+  "year": 1914,
+  "country_invaded": "Alsace",
+  "invader": "France"
+},
+{
+  "year": 1914,
+  "country_invaded": "Belgium",
+  "invader": "Germany"
+},
+{
+  "year": 1914,
+  "country_invaded": "Luxemburg",
+  "invader": "Germany"
+},
+{
+  "year": 1915,
+  "country_invaded": "Haiti",
+  "invader": "the United States"
+},
+{
+  "year": 1912,
+  "country_invaded": "Albania",
+  "invader": "Greece"
+},
+{
+  "year": 1912,
+  "country_invaded": "Macedonia",
+  "invader": "the Balkan League"
+},
+{
+  "year": 1912,
+  "country_invaded": "Macedonia",
+  "invader": "Albania"
+},
+{
+  "year": 1911,
+  "country_invaded": "Libya",
+  "invader": "Italy"
+},
+{
+  "year": 1910,
+  "country_invaded": "Korea",
+  "invader": "Japan"
+},
+{
+  "year": 1910,
+  "country_invaded": "Tibet",
+  "invader": "China"
+},
+{
+  "year": 1904,
+  "country_invaded": "Russia",
+  "invader": "Japan"
+},
+{
+  "year": 1904,
+  "country_invaded": "Tibet",
+  "invader": "British-Indian army"
+},
+{
+  "year": 1898,
+  "country_invaded": "the Philippines",
+  "invader": "the United States"
+},
+{
+  "year": 1898,
+  "country_invaded": "Puerto Rico",
+  "invader": "the United States"
+},
+{
+  "year": 1898,
+  "country_invaded": "Spanish Cuba",
+  "invader": "the United States"
+},
+{
+  "year": 1897,
+  "country_invaded": "Greece",
+  "invader": "the Ottoman Empire"
+},
+{
+  "year": 1897,
+  "country_invaded": "Crete",
+  "invader": "Greece"
+},
+{
+  "year": 1895,
+  "country_invaded": "Ethiopia",
+  "invader": "Italy and Italian Eritrean forces"
+},
+{
+  "year": 1895,
+  "country_invaded": "Chinese Pescadores islands",
+  "invader": "Japan"
+},
+{
+  "year": 1894,
+  "country_invaded": "Korea and China",
+  "invader": "Japan"
+},
+{
+  "year": 1893,
+  "country_invaded": "Hawaii",
+  "invader": "the United States"
+},
+{
+  "year": 1884,
+  "country_invaded": "Chinese Tonkin in North Vietnam",
+  "invader": "France"
+},
+{
+  "year": 1879,
+  "country_invaded": "Peru",
+  "invader": "Chile"
+},
+{
+  "year": 1879,
+  "country_invaded": "Bolivia",
+  "invader": "Chile"
+},
+{
+  "year": 1878,
+  "country_invaded": "Ottoman Turkey",
+  "invader": "Russia"
+},
+{
+  "year": 1877,
+  "country_invaded": "Ottoman Bulgaria",
+  "invader": "Russia, Romania, Finland and Bulgarians"
+},
+{
+  "year": 1868,
+  "country_invaded": "Abyssinia",
+  "invader": "Britain and British-Indian forces"
+},
+{
+  "year": 1862,
+  "country_invaded": "Mexico",
+  "invader": "France"
+},
+{
+  "year": 1866,
+  "country_invaded": "Korea",
+  "invader": "France"
+},
+{
+  "year": 1864,
+  "country_invaded": "Peruvian Chincha Islands",
+  "invader": "Spain"
+},
+{
+  "year": 1863,
+  "country_invaded": "the United States",
+  "invader": "the Confederate States"
+},
+{
+  "year": 1861,
+  "country_invaded": "the Confederate States",
+  "invader": "the United States"
+},
+{
+  "year": 1859,
+  "country_invaded": "Sardinia-Piedmont",
+  "invader": "and France"
+},
+{
+  "year": 1859,
+  "country_invaded": "Sardinia-Piedmont",
+  "invader": "Austria"
+},
+{
+  "year": 1858,
+  "country_invaded": "Vietnam",
+  "invader": "France"
+},
+{
+  "year": 1856,
+  "country_invaded": "China",
+  "invader": "French-British Alliance"
+},

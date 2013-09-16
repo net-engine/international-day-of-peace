@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+@import 'compass', 'compass/reset';
+
+@import 'mapbox';
+
+strong { font-weight: 700; }
+
+em { font-style: italic; }
+
+#map {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute !important;
+}
+
+
+.leaflet-marker-icon {
+  background: aliceblue;
+  border-radius: 50%;
+  box-shadow: 0 0 0 .25em rgba(0,0,0,.25);
+
+  @include transition(all 1s ease-in-out);
+
+  &.finished {
+    background: orangered;
+    box-shadow: none;
+
+    .tooltip { display: none; }
+  }
+}
+
+
+.tooltip {
+  position: absolute;
+  white-space: nowrap;
+  background: white;
+  color: black;
+  padding: 0 .5em;
+  line-height: 2em;
+  top: 50%;
+  left: 100%;
+  margin-top: -1em;
+  margin-left: .5em;
+  border-radius: 2px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    left: -1em;
+    border: .5em solid transparent;
+    border-right-color: white;
+  }
+}
