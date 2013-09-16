@@ -14,6 +14,7 @@ invasions = [
   }
 ]
 
+duration = 3500
 
 $ ->
   window.map = L.mapbox.map('map', 'netengine.map-vfsy08ln')
@@ -27,12 +28,13 @@ $ ->
 animation = ->
   polyline_options =
     color: 'white'
+    stroke: 5
 
-  $.eachStep invasions, 4000, (i, invasion) ->
+  $.eachStep invasions, duration, (i, invasion) ->
     journey = invasion.journey
     icon = L.divIcon
       className: "invasion"
-      html: "<div class='tooltip'>#{invasion.year} <strong>#{invasion.invader}</strong> invaded <strong>#{invasion.invaded}</strong></div>"
+      html: JST["templates/invasion"](invasion)
 
     marker = L.marker(journey[0],
       icon: icon
@@ -46,3 +48,8 @@ animation = ->
         $(marker._icon).addClass('finished')
       ), 2250
     ), 500
+
+
+  # setTimeout (->
+  #   window.location.reload()
+  # ), (invasions.length * duration) + (2 * duration)

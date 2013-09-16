@@ -2,13 +2,23 @@
 
 @import 'compass', 'compass/reset';
 
-@import 'mapbox';
+@import 'mapbox', 'morris';
+
+@import 'icons';
+
+body {
+  font: normal 100%/1.5em 'Lora', serif;
+  -webkit-font-smoothing: antialised;
+  text-rendering: optimizeLegibility;
+}
+
 
 strong { font-weight: 700; }
-
 em { font-style: italic; }
 
+
 #map {
+  font: normal 100%/1.5em 'Lora', serif;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -26,8 +36,19 @@ em { font-style: italic; }
   &.finished {
     background: orangered;
     box-shadow: none;
+    width: 2em !important;
+    height: 2em !important;
+    text-align: center;
+    line-height: 2em;
+    margin: -1em !important;
+
+    @extend .icon-skull;
 
     .tooltip { display: none; }
+
+    &:hover {
+      .tooltip { display: block; }
+    }
   }
 }
 
@@ -44,6 +65,7 @@ em { font-style: italic; }
   margin-top: -1em;
   margin-left: .5em;
   border-radius: 2px;
+  font-family: 'Lora', serif;
 
   &:before {
     content: '';

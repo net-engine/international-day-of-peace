@@ -1,0 +1,4 @@
+<div class='tooltip'>
+  <strong class='date'><%= @year %></strong>
+  <em><%= @invader %></em> invaded <em><%= @invaded %></em>
+</div>

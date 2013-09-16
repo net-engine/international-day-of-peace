@@ -3,3 +3,9 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.14"
+
+# Templates
+gem "eco"
+
+# Build Support
+gem 'middleman-gh-pages'
