@@ -1,0 +1,297 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "decade" : "1940 - 1950",
+      "invasions" : [
+        {
+          "year" : 1940,
+          "invader" : "Italy, Germany and Bulgaria",
+          "invaded" : "Egypt, Greece",
+          "coordinates" : [ [2.56738,41.871940000000002], [30.802498,26.820553 ]]
+        },
+        {
+          "year" : 1940,
+          "invader" : "Italy",
+          "invaded" : "Sudan, Kenya, British Somaliland",
+          "coordinates" : [ [12.56738, 41.871940000000002], [ 30.217635999999999,12.862807] ]
+        },
+        {
+          "year" : 1940,
+          "invader" : "Japan, destroying the French colony",
+          "invaded" : "Vietnam",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 108.277199,14.058324000000001] ]
+        },
+        {
+          "year" : 1940,
+          "invader" : "Britain",
+          "invaded" : "Iceland",
+          "coordinates" : [ [-3.4359730000000002, 55.378050999999999], [ -19.020835000000002,64.963050999999993] ]
+        },
+        {
+          "year" : 1940,
+          "invader" : "Italy",
+          "invaded" : "Southern France",
+          "coordinates" : [ [12.56738, 41.871940000000002], [ 121.03082070000001,14.4826368] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Japan",
+          "invaded" : "Netherlands East Indies, Guam and Borneo",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 144.79373100000001,13.444304000000001] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Japan",
+          "invaded" : "Wake Island, Hong Kong and Philippines",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 121.774017,12.879721] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Japan",
+          "invaded" : "Malaya and Thailand",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 100.992541,15.870032] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Germany",
+          "invaded" : "the Soviet Union",
+          "coordinates" : [ [10.451525999999999, 51.165691000000002], [ 51.363519400000001,51.220643099999997] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Thailand",
+          "invaded" : "Vichy Indochina",
+          "coordinates" : [ [100.992541, 15.870032], [ 108.277199,14.058324000000001] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "the Soviet Union and Britain",
+          "invaded" : "Iran",
+          "coordinates" : [ [105.31875599999999, 61.524009999999997], [ 53.688046,32.427908000000002] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Australian and Free French forces",
+          "invaded" : "Vichy French Syria and Lebanon",
+          "coordinates" : [ [133.775136, 25.274398000000001], [ 38.996814999999998,34.802075000000002] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Japan",
+          "invaded" : "Southern French Indochina",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 108.277199,14.058324000000001] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "the United States",
+          "invaded" : "Greenland and Iceland",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ -42.604303000000002,71.706935999999999] ]
+        },
+        {
+          "year" : 1941,
+          "invader" : "Japan",
+          "invaded" : "Southern Vietnam",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 108.277199,14.058324000000001] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "the United States",
+          "invaded" : "Vichy French North Africa",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 2.4929454,27.2257277] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "the United States, Australia and New Zealand",
+          "invaded" : "Solomon Islands",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 160.156194,-9.6457099999999993] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "Japan",
+          "invaded" : "Alaska",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ -149.49367330000001,64.200841299999993] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "Germany",
+          "invaded" : "Vichy France",
+          "coordinates" : [ [10.451525999999999, 51.165691000000002], [ 2.213749,46.227637999999999] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "Allied forces",
+          "invaded" : "Madagascar",
+          "coordinates" : [ [-3.4359730000000002, 55.378050999999999], [ 46.869107,-18.766946999999998] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "Japan",
+          "invaded" : "Indonesia",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 113.92132700000001,-0.78927499999999995] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "Japan",
+          "invaded" : "New Guinea, Dutch New Guinea and Singapore",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 143.95554999999999,-6.3149930000000003] ]
+        },
+        {
+          "year" : 1942,
+          "invader" : "Japan",
+          "invaded" : "Solomon Islands",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 160.156194,-9.6457099999999993] ]
+        },
+        {
+          "year" : 1943,
+          "invader" : "Japan",
+          "invaded" : "Gilberts and Marshall Islands",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 171.18447800000001,7.1314739999999999] ]
+        },
+        {
+          "year" : 1943,
+          "invader" : "the United States, Britain and Canada",
+          "invaded" : "Italy",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 12.56738,41.871940000000002] ]
+        },
+        {
+          "year" : 1943,
+          "invader" : "Japan",
+          "invaded" : "Kolombangara in the Solomon Islands",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 160.156194,-9.6457099999999993] ]
+        },
+        {
+          "year" : 1943,
+          "invader" : "Britain, the United States and Canada",
+          "invaded" : "Italy (Sicily)",
+          "coordinates" : [ [-3.4359730000000002, 55.378050999999999], [ 14.015355700000001,37.5999938] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "Allied forces",
+          "invaded" : "Western Germany",
+          "coordinates" : [ [-3.4359730000000002, 55.378050999999999], [ 11.576753999999999,48.1367203] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "the Soviet Union",
+          "invaded" : "Bulgaria, Yugoslavia",
+          "coordinates" : [ [51.363519400000001, 51.220643099999997], [ 25.48583,42.733882999999999] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "the United States",
+          "invaded" : "Guam",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 144.79373100000001,13.444304000000001] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "the United States",
+          "invaded" : "Southern France",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 2.3536630000000001,43.212161000000002] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "Japan",
+          "invaded" : "East Asia",
+          "coordinates" : [ [138.25292400000001, 36.204824000000002], [ 121.473704,31.230392999999999] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "the United States, Britain and Canada",
+          "invaded" : "Normandy, France",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 0.17125290000000001,48.879870400000001] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "Germany",
+          "invaded" : "Hungary",
+          "coordinates" : [ [10.451525999999999, 51.165691000000002], [ 19.503304,47.162494000000002] ]
+        },
+        {
+          "year" : 1944,
+          "invader" : "the United States",
+          "invaded" : "Marshall Islands",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 171.18447800000001,7.1314739999999999] ]
+        },
+        {
+          "year" : 1945,
+          "invader" : "the Allies",
+          "invaded" : "Japanese-occupied Vietnam",
+          "coordinates" : [ [6.4472779999999998, 46.948045999999998], [ 108.277199,14.058324000000001] ]
+        },
+        {
+          "year" : 1945,
+          "invader" : "the Soviet Union",
+          "invaded" : "Japanese-controlled Manchuria and Korea",
+          "coordinates" : [ [105.31875599999999, 61.524009999999997], [ 127.76692199999999,35.907756999999997] ]
+        },
+        {
+          "year" : 1945,
+          "invader" : "the United States",
+          "invaded" : "Okinawa, Japan",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 127.6809317,26.2124013] ]
+        },
+        {
+          "year" : 1945,
+          "invader" : "the Soviet Union",
+          "invaded" : "Poland, Austria and Eastern Germany",
+          "coordinates" : [ [105.31875599999999, 61.524009999999997], [ 19.145136000000001,51.919438] ]
+        },
+        {
+          "year" : 1945,
+          "invader" : "the United States",
+          "invaded" : "Japanese Formosa",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 120.960515,23.69781] ]
+        },
+        {
+          "year" : 1945,
+          "invader" : "Allied forces",
+          "invaded" : "Iwo Jima, Japan",
+          "coordinates" : [ [-74.001306, 40.729396000000001], [ 141.32728460000001,24.774024099999998] ]
+        },
+        {
+          "year" : 1946,
+          "invader" : "France",
+          "invaded" : "Northern Vietnam",
+          "coordinates" : [ [2.213749, 46.227637999999999], [ 108.277199,14.058324000000001] ]
+        },
+        {
+          "year" : 1947,
+          "invader" : "Pakistan irregulars",
+          "invaded" : "Kashmir",
+          "coordinates" : [ [69.345116000000004, 30.375321], [ 76.825965199999999,34.1490875] ]
+        }
+      ]
+    },
+    {
+      "decade" : "2000 - 2010",
+      "invasions" : [
+        {
+          "year": 2008,
+          "invader": "Australia",
+          "invaded": "India",
+          "coordinates": [[-27.4710,153.0240], [21,78]]
+        },
+        {
+          "year": 2008,
+          "invader": "Chad",
+          "invaded": "Australia",
+          "coordinates": [[10,18], [-27.4710,153.0240]]
+        },
+        {
+          "year": 2008,
+          "invader": "Australia",
+          "invaded": "India",
+          "coordinates": [[-27.4710,153.0240], [21,78]]
+        },
+        {
+          "year": 2008,
+          "invader": "Chad",
+          "invaded": "Australia",
+          "coordinates": [[10,18], [-27.4710,153.0240]]
+        }
+      ]
+    }
+  ]
+}

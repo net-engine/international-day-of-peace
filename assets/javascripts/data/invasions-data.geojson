@@ -1,0 +1,864 @@
+{
+  "type": "FeatureCollection",
+  "features" : [
+    { "geometry" : {
+        "coordinates" : [ [30.802498, 26.820553], [ 12.56738, 41.871940000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Egypt, Greece",
+        "invader" : "Italy, Germany and Bulgaria",
+        "value" : "1940"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [30.217635999999999, 12.862807], [ 12.56738, 41.871940000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Sudan, Kenya, British Somaliland",
+        "invader" : "Italy",
+        "value" : "1940"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Vietnam",
+        "invader" : "Japan, destroying the French colony",
+        "value" : "1940"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [-19.020835000000002, 64.963050999999993], [ -3.4359730000000002, 55.378050999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Iceland",
+        "invader" : "Britain",
+        "value" : "1940"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [121.03082070000001, 14.4826368], [ 12.56738, 41.871940000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Southern France",
+        "invader" : "Italy",
+        "value" : "1940"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [144.79373100000001, 13.444304000000001], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Netherlands East Indies, Guam and Borneo",
+        "invader" : "Japan",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [121.774017, 12.879721], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Wake Island, Hong Kong and Philippines",
+        "invader" : "Japan",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [100.992541, 15.870032], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Malaya and Thailand",
+        "invader" : "Japan",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [51.363519400000001, 51.220643099999997], [ 10.451525999999999, 51.165691000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "the Soviet Union",
+        "invader" : "Germany",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 100.992541, 15.870032 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Vichy Indochina",
+        "invader" : "Thailand",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [53.688046, 32.427908000000002], [ 105.31875599999999, 61.524009999999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Iran",
+        "invader" : "the Soviet Union and Britain",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [38.996814999999998, 34.802075000000002], [ 133.775136, 25.274398000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Vichy French Syria and Lebanon",
+        "invader" : "Australian and Free French forces",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Southern French Indochina",
+        "invader" : "Japan",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [-42.604303000000002, 71.706935999999999], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Greenland and Iceland",
+        "invader" : "the United States",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Southern Vietnam",
+        "invader" : "Japan",
+        "value" : "1941"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [2.4929454, 27.2257277], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Vichy French North Africa",
+        "invader" : "the United States",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [160.156194, -9.6457099999999993], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Solomon Islands",
+        "invader" : "the United States, Australia and New Zealand",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [-149.49367330000001, 64.200841299999993], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Alaska",
+        "invader" : "Japan",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [2.213749, 46.227637999999999], [ 10.451525999999999, 51.165691000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Vichy France",
+        "invader" : "Germany",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [46.869107, -18.766946999999998], [ -3.4359730000000002, 55.378050999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Madagascar",
+        "invader" : "Allied forces",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [113.92132700000001, -0.78927499999999995], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Indonesia",
+        "invader" : "Japan",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [143.95554999999999, -6.3149930000000003], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "New Guinea, Dutch New Guinea and Singapore",
+        "invader" : "Japan",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [160.156194, -9.6457099999999993], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Solomon Islands",
+        "invader" : "Japan",
+        "value" : "1942"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [171.18447800000001, 7.1314739999999999], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Gilberts and Marshall Islands",
+        "invader" : "Japan",
+        "value" : "1943"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [12.56738, 41.871940000000002], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Italy",
+        "invader" : "the United States, Britain and Canada",
+        "value" : "1943"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [160.156194, -9.6457099999999993], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Kolombangara in the Solomon Islands",
+        "invader" : "Japan",
+        "value" : "1943"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [14.015355700000001, 37.5999938], [ -3.4359730000000002, 55.378050999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Italy (Sicily)",
+        "invader" : "Britain, the United States and Canada",
+        "value" : "1943"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [11.576753999999999, 48.1367203], [ -3.4359730000000002, 55.378050999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Western Germany",
+        "invader" : "Allied forces",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [25.48583, 42.733882999999999], [ 51.363519400000001, 51.220643099999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Bulgaria, Yugoslavia",
+        "invader" : "the Soviet Union",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [144.79373100000001, 13.444304000000001], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Guam",
+        "invader" : "the United States",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [2.3536630000000001, 43.212161000000002], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Southern France",
+        "invader" : "the United States",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [121.473704, 31.230392999999999], [ 138.25292400000001, 36.204824000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "East Asia",
+        "invader" : "Japan",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [0.17125290000000001, 48.879870400000001], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Normandy, France",
+        "invader" : "the United States, Britain and Canada",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [19.503304, 47.162494000000002], [ 10.451525999999999, 51.165691000000002 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Hungary",
+        "invader" : "Germany",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [171.18447800000001, 7.1314739999999999], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Marshall Islands",
+        "invader" : "the United States",
+        "value" : "1944"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 6.4472779999999998, 46.948045999999998 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Japanese-occupied Vietnam",
+        "invader" : "the Allies",
+        "value" : "1945"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [127.76692199999999, 35.907756999999997], [ 105.31875599999999, 61.524009999999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Japanese-controlled Manchuria and Korea",
+        "invader" : "the Soviet Union",
+        "value" : "1945"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [127.6809317, 26.2124013], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Okinawa, Japan",
+        "invader" : "the United States",
+        "value" : "1945"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [19.145136000000001, 51.919438], [ 105.31875599999999, 61.524009999999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Poland, Austria and Eastern Germany",
+        "invader" : "the Soviet Union",
+        "value" : "1945"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [120.960515, 23.69781], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Japanese Formosa",
+        "invader" : "the United States",
+        "value" : "1945"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [141.32728460000001, 24.774024099999998], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Iwo Jima, Japan",
+        "invader" : "Allied forces",
+        "value" : "1945"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 2.213749, 46.227637999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Northern Vietnam",
+        "invader" : "France",
+        "value" : "1946"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [76.825965199999999, 34.1490875], [ 69.345116000000004, 30.375321 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Kashmir",
+        "invader" : "Pakistan irregulars",
+        "value" : "1947"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [127.510093, 40.339852], [ 127.76692199999999, 35.907756999999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "North Korea",
+        "invader" : "South Korea",
+        "value" : "1950"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [91.117211999999995, 29.646923000000001], [ 104.195397, 35.861660000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Tibet",
+        "invader" : "China",
+        "value" : "1950"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [127.76692199999999, 35.907756999999997], [ 127.510093, 40.339852 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "South Korea",
+        "invader" : "North Korea",
+        "value" : "1951"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [19.503304, 47.162494000000002], [ 105.31875599999999, 61.524009999999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Hungary",
+        "invader" : "the Soviet Union",
+        "value" : "1956"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [30.802498, 26.820553], [ 2.213749, 46.227637999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Egypt",
+        "invader" : "France",
+        "value" : "1956"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [143.95554999999999, -6.3149930000000003], [ 113.92132700000001, 0.78927499999999995 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Netherlands New Guinea",
+        "invader" : "Indonesia",
+        "value" : "1961"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [74.123996000000005, 15.299326499999999], [ 78.962879999999998, 20.593684 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Goa",
+        "invader" : "India",
+        "value" : "1961"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [78.962879999999998, 20.593684], [ 104.195397, 35.861660000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "India",
+        "invader" : "China",
+        "value" : "1962"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [32.611666700000001, 35.179166700000003], [ 21.824311999999999, 39.074207999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "the Turkish Cypriot Enclave Kokkina",
+        "invader" : "Cyprus and Greece",
+        "value" : "1964"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [69.345116000000004, 30.375321], [ 78.962879999999998, 20.593684 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Pakistan",
+        "invader" : "India",
+        "value" : "1965"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [78.962879999999998, 20.593684], [ 69.345116000000004, 30.375321 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "India",
+        "invader" : "Pakistan Army and irregulars",
+        "value" : "1965"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [-70.162650999999997, 18.735693000000001], [ -95.712890999999999, 37.090240000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Dominican Republic",
+        "invader" : "United States",
+        "value" : "1965"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [69.345116000000004, 30.375321], [ 78.962879999999998, 20.593684 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "East Pakistan",
+        "invader" : "India",
+        "value" : "1971"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [33.429859, 35.126412999999999], [ 35.243321999999999, 38.963745000000003 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Cyprus",
+        "invader" : "Turkey",
+        "value" : "1974"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [111.793104, 16.204552], [ 104.195397, 35.861660000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Paracel Islands",
+        "invader" : "China",
+        "value" : "1974"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [102.91666669999999, 9.9166667000000004], [ 108.277199, 14.058324000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Poulo Wai Island",
+        "invader" : "Vietnam",
+        "value" : "1975"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 108.277199, 14.058324000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "South Vietnam",
+        "invader" : "Democratic Republic of North Vietnam",
+        "value" : "1975"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [104.99096299999999, 12.565678999999999], [ 108.277199, 14.058324000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Cambodia",
+        "invader" : "Vietnam",
+        "value" : "1978"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [67.709952999999999, 33.939109999999999], [ 105.31875599999999, 61.524009999999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Afghanistan",
+        "invader" : "the Soviet Union",
+        "value" : "1979"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [100.992541, 15.870032], [ 108.277199, 14.058324000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Thailand",
+        "invader" : "Vietnam",
+        "value" : "1979"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [108.277199, 14.058324000000001], [ 104.195397, 35.861660000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Northern Vietnam",
+        "invader" : "China",
+        "value" : "1979"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [32.290275000000001, 1.3733329999999999], [ 34.888821999999998, 6.3690280000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Uganda",
+        "invader" : "Tanzania",
+        "value" : "1979"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [35.862285, 33.854720999999998], [ 34.851612000000003, 31.046050999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Lebanon",
+        "invader" : "Israel",
+        "value" : "1982"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [-61.679000000000002, 12.1165], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Grenada",
+        "invader" : "the United States and allied Caribbean nations",
+        "value" : "1983"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [114.3650818, 10.181333499999999], [ 104.195397, 35.861660000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Spratly Islands",
+        "invader" : "China",
+        "value" : "1988"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [-80.782127000000003, 8.5379810000000003], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Panama",
+        "invader" : "the United States",
+        "value" : "1989"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [47.481766, 29.31166], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Kuwait",
+        "invader" : "the United States",
+        "value" : "1991"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [40.489673000000003, 9.1449999999999996], [ 39.782333999999999, 15.179384000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Ethiopia",
+        "invader" : "Eritrea",
+        "value" : "1998"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [67.709952999999999, 33.939109999999999], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Afghanistan",
+        "invader" : "United States-led coalition",
+        "value" : "2001"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [43.679290999999999, 33.223191], [ -74.001306, 40.729396000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Iraq",
+        "invader" : "United States-led coalition",
+        "value" : "2003"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [46.199615999999999, 5.1521489999999996], [ 40.489673000000003, 9.1449999999999996 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Somalia",
+        "invader" : "Ethiopia",
+        "value" : "2006"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [35.862285, 33.854720999999998], [ 34.851612000000003, 31.046050999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Lebanon",
+        "invader" : "Israel",
+        "value" : "2006"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [34.453592999999998, 31.522561], [ 34.851612000000003, 31.046050999999999 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Gaza",
+        "invader" : "Israel",
+        "value" : "2008"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [-82.907122999999999, 32.157435100000001], [ 105.31875599999999, 61.524009999999997 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Georgia",
+        "invader" : "Russia",
+        "value" : "2008"
+      },
+      "type" : "Feature"
+    },
+    { "geometry" : {
+        "coordinates" : [ [44.437060600000002, -12.2138145], [ 38.746799000000003, 9.0227360000000001 ] ],
+          "type" : "LineString"
+        },
+      "properties" : {
+        "Country invaded" : "Anjouan",
+        "invader" : "African Union",
+        "value" : "2008"
+      },
+      "type" : "Feature"
+    }
+  ]
+}
+
