@@ -1,0 +1,2 @@
+<strong class='date'><%= @year %></strong>
+<em><%= @invader %></em> invaded <em><%= @invaded %></em>

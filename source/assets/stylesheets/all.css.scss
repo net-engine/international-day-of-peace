@@ -6,6 +6,10 @@
 
 @import 'icons';
 
+$duration: 500ms;
+
+$bg-red: #e54c4c;
+
 body {
   font: normal 100%/1.5em 'Lora', serif;
   -webkit-font-smoothing: antialised;
@@ -16,6 +20,9 @@ body {
 strong { font-weight: 700; }
 em { font-style: italic; }
 
+a {
+  color: #444;
+}
 
 #map {
   font: normal 100%/1.5em 'Lora', serif;
@@ -23,18 +30,124 @@ em { font-style: italic; }
   top: 0;
   bottom: 0;
   position: absolute !important;
+  background: $bg-red;
+}
+
+.box {
+  position: fixed;
+  background: white;
+  background: rgba(255,255,255,.75);
+  padding: 1em;
+  margin: 1em;
+}
+
+.leaflet-control-zoom.leaflet-control {
+  margin: 1em;
+  border: 0;
+  background: transparent;
+
+  a {
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    line-height: 2em;
+    margin: 0;
+    font-size: 1em;
+    border: 0;
+    border-radius: 0;
+    background: white;
+    background: rgba(255, 255, 255, 0.75);
+    color: #444;
+
+    &.leaflet-control-zoom-in {
+      border-bottom: 1px solid #ccc;
+      border-bottom-color: rgba(black, .25);
+      margin-top: -1px;
+    }
+  }
+
+}
+
+#chart {
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 25%;
+  padding: 2.5em 0 .5em .5em;
+  -webkit-font-smoothing: antialiased;
+  @include transition(all .3s linear);
+
+  &.large {
+    bottom: 25%;
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    @include box-sizing(border-box);
+  }
+
+  &:before {
+    content: 'Conflicts';
+    position: absolute;
+    top: 1em;
+    left: 1.25em;
+    color: hsl(0, 25%, 10%);
+    font-style: italic;
+  }
+}
+
+.morris-hover { display: none !important; }
+
+.info {
+  top: 0;
+  right: 0;
+}
+
+.decade-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.invasion-info {
+  top: 4.5em;
+  right: 0;
+}
+
+.refresh-button {
+  left: 0;
+  top: 5em;
+  padding: 0;
+  text-indent: -9999px;
+  width: 2em;
+  height: 2em;
+  line-height: 1em;
+  text-align: center;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -.5em;
+    text-indent: 0;
+  }
+
 }
 
 
-.leaflet-marker-icon {
+// .leaflet-marker-icon {
+//   display: none;
+// }
+
+.invasion {
+  display: block;
   background: aliceblue;
   border-radius: 50%;
   box-shadow: 0 0 0 .25em rgba(0,0,0,.25);
+  z-index: 100 !important;
 
-  @include transition(all 1s ease-in-out);
+  @include transition(all $duration ease-in-out);
 
   &.finished {
-    background: orangered;
+    background: yellow;
     box-shadow: none;
     width: 2em !important;
     height: 2em !important;
@@ -47,6 +160,7 @@ em { font-style: italic; }
     .tooltip { display: none; }
 
     &:hover {
+      z-index: 101 !important;
       .tooltip { display: block; }
     }
   }

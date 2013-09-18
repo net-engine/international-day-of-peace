@@ -1,55 +1,153 @@
 
-invasions = [
-  {
-    year: 2008
-    invader: "Australia"
-    invaded: "India"
-    journey: [[-27.4710,153.0240], [21,78]]
-  },
-  {
-    year: 2008
-    invader: "Chad"
-    invaded: "Australia"
-    journey: [[10,18], [-27.4710,153.0240]]
-  }
-]
+# Init
 
-duration = 3500
+duration = 1500
 
 $ ->
-  window.map = L.mapbox.map('map', 'netengine.map-vfsy08ln')
-    .setView([2.3167,111.55], 3)
+  map_options =
+    minZoom: 2
+    noWrap: true
+
+  window.map = L.mapbox.map('map', 'netengine.map-vfsy08ln', map_options)
+    .setView([33.43144133557529,-84.638671875], 2)
+    .fitWorld()
+
+  decades = $.getValues "/assets/javascripts/data/test-data.json"
+  window.decades = decades.features
+
+  window.boundaries_data = $.getValues "/assets/javascripts/data/countries.geojson"
+
+  boundaries = L.geoJson(boundaries_data,
+    style: (feature) ->
+      color: "red"
+      weight: 1,
+      fillOpacity: 0.1
+    onEachFeature: onEachFeature
+  )
+
+  boundaries.addTo(map);
+
+
+  window.graph = Morris.Bar
+    element: 'chart'
+    barColors: ['hsl(0,25%,10%)']
+    stacked: true
+    data: [
+      { y: '1990 - 2000', a: '0' }
+    ]
+    xkey: 'y'
+    ykeys: ['a']
+    labels: ['Conflicts']
+    gridTextFamily: 'Lora',
+    gridTextColor: 'hsl(0, 25%, 10%)'
+
+  setTimeout (->
+    animation()
+  ), 1500
+
+
+
+
+jQuery.extend getValues: (url) ->
+  result = null
+  $.ajax
+    url: url
+    type: "get"
+    dataType: "json"
+    async: false
+    success: (data) ->
+      result = data
+
+  result
+
+
+window.toggleChart = (time) ->
+  chart = $('#chart')
+
+  chart.toggleClass('large')
+  setTimeout (->
+    chart.find('svg').attr('height', chart.height()).attr('width', chart.width())
+    graph.redraw()
+  ), time
+
+onEachFeature = (feature, layer) ->
+  layer.on
+    click: (e) ->
+      console?.log e.target
+      e.target.setStyle
+        fillOpacity: .9
+        fillColor: 'red'
+        weight: 2
+
+window.restart = ->
+  toggleChart(300)
 
   setTimeout (->
     animation()
   ), 1000
 
 
-animation = ->
+window.animation = ->
   polyline_options =
     color: 'white'
-    stroke: 5
+    weight: 2
+    # opacity: 0.5
 
-  $.eachStep invasions, duration, (i, invasion) ->
-    journey = invasion.journey
-    icon = L.divIcon
-      className: "invasion"
-      html: JST["templates/invasion"](invasion)
+  index = 0
+  window.graphData = []
 
-    marker = L.marker(journey[0],
-      icon: icon
-    ).addTo map
-    polyline = L.polyline(journey, polyline_options).addTo(map)
+  $.eachStep decades, decades[index].invasions.length * duration, (i, decade) ->
+    index++
+    count = decade.invasions.length
 
-    setTimeout (->
-      marker.setLatLng journey[1]
+    map.removeLayer(featureGroup) if featureGroup?
+    window.featureGroup = L.featureGroup().addTo(map)
+
+    $('#info').html("<div class='decade-title'>#{decade.decade}</div>")
+
+    $.eachStep decade.invasions, duration, (i, invasion) ->
+      count--
+      graphData[(index - 1)] =
+        y: decade.decade
+        a: i
+      graph.setData(graphData)
+
+      $('#invasion-info').html JST["templates/invasion-info"](invasion)
+
+      journey = invasion.coordinates
+
+      icon = L.divIcon
+        className: "invasion"
+        html: JST["templates/invasion"](invasion)
+
+      window.marker = L.marker(journey[0],
+        icon: icon
+        riseOnHover: true
+      ).addTo featureGroup
+
+      polyline = L.polyline(journey, polyline_options).addTo(featureGroup)
+
       setTimeout (->
-        map.removeLayer(polyline)
-        $(marker._icon).addClass('finished')
-      ), 2250
-    ), 500
+        marker.setLatLng journey[1]
+        setTimeout (->
+          featureGroup.removeLayer(polyline)
+          $(marker._icon).addClass('finished')
+        ), duration * .75
+      ), duration / 10
+
+      # if count is 0
+      #   console?.log "#{decade.decade}: done"
+
+    if index is decades.length
+      setTimeout (->
+        toggleChart(300)
+        $('#refresh').show()
+      ), (decades[decades.length - 1].invasions.length * duration) + duration
 
 
-  # setTimeout (->
-  #   window.location.reload()
-  # ), (invasions.length * duration) + (2 * duration)
+
+# Event listeners
+
+$(document).on 'click', '#refresh', (e) ->
+  restart()
+  $(this).hide()

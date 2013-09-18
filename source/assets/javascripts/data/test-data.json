@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "decade" : "1990 - 2000",
+      "invasions" : [
+        {
+          "year" : 1991,
+          "invader": "Australia",
+          "invaded": "India",
+          "coordinates": [[-27.4710,153.0240], [21,78]]
+        },
+        {
+          "year": 1991,
+          "invader": "Chad",
+          "invaded": "Australia",
+          "coordinates": [[10,18], [-27.4710,153.0240]]
+        },
+        {
+          "year": 1991,
+          "invader": "Australia",
+          "invaded": "India",
+          "coordinates": [[-27.4710,153.0240], [21,78]]
+        },
+        {
+          "year": 1991,
+          "invader": "Chad",
+          "invaded": "Australia",
+          "coordinates": [[10,18], [-27.4710,153.0240]]
+        },
+        {
+          "year": 1991,
+          "invader": "Australia",
+          "invaded": "Something else",
+          "coordinates": [[-25, 2], [21,78]]
+        },
+        {
+          "year": 1991,
+          "invader": "Chad",
+          "invaded": "USA",
+          "coordinates": [[10,18], [50,120]]
+        }
+      ]
+    },
+    {
+      "decade" : "2000 - 2010",
+      "invasions" : [
+        {
+          "year": 2008,
+          "invader": "Australia",
+          "invaded": "India",
+          "coordinates": [[-27.4710,153.0240], [21,78]]
+        },
+        {
+          "year": 2008,
+          "invader": "Chad",
+          "invaded": "Australia",
+          "coordinates": [[10,18], [-27.4710,153.0240]]
+        },
+        {
+          "year": 2008,
+          "invader": "Australia",
+          "invaded": "India",
+          "coordinates": [[-27.4710,153.0240], [21,78]]
+        },
+        {
+          "year": 2008,
+          "invader": "Chad",
+          "invaded": "Australia",
+          "coordinates": [[10,18], [-27.4710,153.0240]]
+        }
+      ]
+    }
+  ]
+}
