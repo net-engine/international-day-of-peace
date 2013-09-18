@@ -5,18 +5,22 @@ duration = 1000
 full_duration = duration * 15
 
 $ ->
+  if window.location.hostname is "net-engine.github.io"
+    basepath = "http://net-engine.github.io/international-day-of-peace/assets"
+  else
+    basepath = "/assets"
+
   map_options =
     minZoom: 2
     noWrap: true
 
   window.map = L.mapbox.map('map', 'netengine.map-vfsy08ln', map_options)
-    .setView([33.43144133557529,-84.638671875], 2)
-    .fitWorld()
+    .setView([27.75,9], 2)
 
-  decades = $.getValues "/assets/javascripts/data/invasions-data.json"
+  decades = $.getValues "#{basepath}/javascripts/data/invasions-data.json"
   window.decades = decades.features
 
-  window.boundaries_data = $.getValues "/assets/javascripts/data/countries.geojson"
+  window.boundaries_data = $.getValues "#{basepath}/javascripts/data/countries.geojson"
 
   boundaries = L.geoJson(boundaries_data,
     style: (feature) ->
