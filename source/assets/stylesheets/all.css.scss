@@ -33,6 +33,22 @@ a {
   background: $bg-red;
 }
 
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: .75em;
+  font-size: 1.5em;
+  font-weight: 700;
+  background: #e54c4c;
+
+  .hashtag {
+    font-size: 75%;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+
 .box {
   position: fixed;
   background: white;
@@ -42,6 +58,7 @@ a {
 }
 
 .leaflet-control-zoom.leaflet-control {
+  display: none !important;
   margin: 1em;
   border: 0;
   background: transparent;
@@ -68,7 +85,7 @@ a {
 
 }
 
-#chart {
+.chart-box {
   bottom: 0;
   left: 0;
   width: 30%;
@@ -85,6 +102,11 @@ a {
     @include box-sizing(border-box);
   }
 
+  #chart {
+    width: 100%;
+    height: 100%;
+  }
+
   &:before {
     content: 'Conflicts';
     position: absolute;
@@ -93,23 +115,6 @@ a {
     color: hsl(0, 25%, 10%);
     font-style: italic;
   }
-}
-
-.morris-hover { display: none !important; }
-
-.info {
-  top: 0;
-  right: 0;
-}
-
-.decade-title {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.invasion-info {
-  top: 4.5em;
-  right: 0;
 }
 
 .refresh-button {
@@ -133,6 +138,25 @@ a {
 }
 
 
+.morris-hover { display: none !important; }
+
+.info {
+  top: 0;
+  right: 0;
+}
+
+.decade-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.invasion-info {
+  top: 4.5em;
+  right: 0;
+}
+
+
+
 // .leaflet-marker-icon {
 //   display: none;
 // }
@@ -145,6 +169,8 @@ a {
   z-index: 100 !important;
 
   @include transition(all $duration ease-in-out);
+
+  .tooltip { display: none; }
 
   &.finished {
     background: yellow;

@@ -3,18 +3,17 @@
 
 %h1
   International Day of Peace 2013
-  %em.hashtag #PeaceDay
-
-= link_to 'Replay', '#', id: 'refresh', class: 'refresh-button box icon-repeat icon-only'
+  = link_to '#PeaceDay', 'https://twitter.com/search?q=%23PeaceDay', class: 'hashtag'
 
 #info.info.box
 #invasion-info.invasion-info.box
 
 
-#chart.box
+#chart-box.box.chart-box
+  #chart
+  = link_to 'Replay', '#', id: 'refresh', class: 'refresh-button box icon-repeat icon-only'
 
 
-%cite
-  %ul
-    %li= link_to 'Patterns of major armed conflicts, 2000–2009', 'http://www.sipri.org/yearbook/2010/files/SIPRIYB201002A.pdf'
-    %li= link_to 'UCDP/PRIO Armed Conflict Dataset', http://www.prio.no/Data/Armed-Conflict/UCDP-PRIO/'
+%ul.sources
+  %li= link_to 'Patterns of major armed conflicts, 2000–2009', 'http://www.sipri.org/yearbook/2010/files/SIPRIYB201002A.pdf'
+  %li= link_to 'UCDP/PRIO Armed Conflict Dataset', 'http://www.prio.no/Data/Armed-Conflict/UCDP-PRIO/Armed-Conflicts-Version-X-2009/'

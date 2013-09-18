@@ -1,7 +1,8 @@
 
 # Init
 
-duration = 1500
+duration = 1000
+full_duration = duration * 15
 
 $ ->
   map_options =
@@ -12,7 +13,7 @@ $ ->
     .setView([33.43144133557529,-84.638671875], 2)
     .fitWorld()
 
-  decades = $.getValues "/assets/javascripts/data/test-data.json"
+  decades = $.getValues "/assets/javascripts/data/invasions-data.json"
   window.decades = decades.features
 
   window.boundaries_data = $.getValues "/assets/javascripts/data/countries.geojson"
@@ -33,7 +34,7 @@ $ ->
     barColors: ['hsl(0,25%,10%)']
     stacked: true
     data: [
-      { y: '1990 - 2000', a: '0' }
+      { y: '1940s', a: '0' }
     ]
     xkey: 'y'
     ykeys: ['a']
@@ -62,7 +63,7 @@ jQuery.extend getValues: (url) ->
 
 
 window.toggleChart = (time) ->
-  chart = $('#chart')
+  chart = $('#chart-box')
 
   chart.toggleClass('large')
   setTimeout (->
@@ -80,11 +81,7 @@ onEachFeature = (feature, layer) ->
         weight: 2
 
 window.restart = ->
-  toggleChart(300)
-
-  setTimeout (->
-    animation()
-  ), 1000
+  window.location.reload()
 
 
 window.animation = ->
@@ -96,7 +93,7 @@ window.animation = ->
   index = 0
   window.graphData = []
 
-  $.eachStep decades, decades[index].invasions.length * duration, (i, decade) ->
+  $.eachStep decades, full_duration, (i, decade) ->
     index++
     count = decade.invasions.length
 
@@ -105,11 +102,12 @@ window.animation = ->
 
     $('#info').html("<div class='decade-title'>#{decade.decade}</div>")
 
-    $.eachStep decade.invasions, duration, (i, invasion) ->
+    $.eachStep decade.invasions, (full_duration / decade.invasions.length), (i, invasion) ->
       count--
+
       graphData[(index - 1)] =
         y: decade.decade
-        a: i
+        a: decade.occurrences
       graph.setData(graphData)
 
       $('#invasion-info').html JST["templates/invasion-info"](invasion)
@@ -142,7 +140,11 @@ window.animation = ->
       setTimeout (->
         toggleChart(300)
         $('#refresh').show()
-      ), (decades[decades.length - 1].invasions.length * duration) + duration
+      ), full_duration * 2
+
+      # setTimeout (->
+      #   restart()
+      # ), full_duration * 3
 
 
 
