@@ -78,7 +78,7 @@ window.toggleChart = (time) ->
 onEachFeature = (feature, layer) ->
   layer.on
     click: (e) ->
-      console?.log e.target
+      # console?.log e.target
       e.target.setStyle
         fillOpacity: .9
         fillColor: 'red'
