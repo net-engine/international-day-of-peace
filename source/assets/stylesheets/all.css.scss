@@ -16,6 +16,8 @@ body {
   text-rendering: optimizeLegibility;
 
   &:before {
+    display: none;
+
     content: 'sample data';
     position: fixed;
     z-index: 100;
@@ -114,11 +116,21 @@ h1 {
   @include transition(all .3s linear);
 
   &.large {
-    bottom: 25%;
-    left: 25%;
-    width: 50%;
-    height: 30%;
+    bottom: 20%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    z-index: 100;
     @include box-sizing(border-box);
+
+    #chart {
+      width: 50%;
+      height: 50%;
+      position: absolute !important;
+      bottom: 0;
+      left: 0;
+      margin: 1em;
+    }
   }
 
   #chart {
@@ -134,6 +146,16 @@ h1 {
     color: hsl(0, 25%, 10%);
     font-style: italic;
   }
+}
+
+#conflicts-map {
+  display: none;
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  width: 50%;
+  height: 50%;
 }
 
 .refresh-button {
@@ -159,20 +181,24 @@ h1 {
 
 .morris-hover { display: none !important; }
 
-.info {
+.info, .invasion-info {
   top: 0;
-  right: 0;
+  height: 1.5em;
+  text-align: center;
 }
+
+.info {
+  right: 0;
+  width: 6em;
+}
+
+.invasion-info { right: 9em; }
 
 .decade-title {
   font-size: 2em;
   font-weight: bold;
 }
 
-.invasion-info {
-  top: 4.5em;
-  right: 0;
-}
 
 
 
@@ -237,24 +263,149 @@ h1 {
   }
 }
 
+
+
+
+
+
+
+
+
+.twitter-feed {
+  right: 0;
+  top: 4.5em;
+  bottom: 2.5em;
+  width: 30%;
+  background: transparent;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+
+  li {
+    border-top: 1px dashed white;
+    display: block;
+    clear: both;
+    padding: 1em 0;
+    @extend .clearfix;
+
+    &:first-child { border-top: 0; }
+  }
+
+  img {
+    float: left;
+    display: block;
+    width: 3em; height: 3em;
+    @include border-radius(50%);
+    margin-right: 1em;
+  }
+
+  .time {
+    float: left;
+    clear: both;
+    margin: 10px 0 0;
+    width: 52px;
+    font-size: 12px;
+    text-align: center;
+    text-transform: lowercase;
+    @include ellipsis;
+  }
+
+  strong { font-weight: bold; }
+
+  .tweet {
+    margin-left: 4em;
+    margin-top: .5em;
+
+    a { font-weight: 700; }
+  }
+}
+
+
+#tweets ul {
+  padding: 1em;
+  padding-top: 0;
+  background: rgba(white, .75);
+}
+
+
 .leaflet-container .leaflet-control-attribution {
   background: transparent;
   box-shadow: none;
-  padding: .5em 1em;
+  bottom: 4.25em;
+  position: fixed;
+  right: 1em;
+  margin: 1em;
 
-  a { color: white; }
+  a { color: #222; }
 }
 
 
-.logo {
+
+
+.logos {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 10em;
-  margin: 2.25em .75em;
+  height: 1.5em;
+  margin: 1em;
+
+  .logo {
+    float: left;
+    margin-left: 1em;
+    height: 1.5em;
+  }
 
   img {
-    max-width: 100%;
+    max-height: 100%;
     display: block;
   }
 }
+
+
+
+
+
+
+@-webkit-keyframes explosion {
+  from { background-position: 0 0;  }
+  to   { background-position: -6380px 0;  }
+}
+
+@-moz-keyframes explosion {
+  from { background-position: 0 0;  }
+  to   { background-position: -6380px 0;  }
+}
+@-o-keyframes explosion {
+  from { background-position: 0 0;  }
+  to   { background-position: -6380px 0;  }
+}
+@keyframes explosion {
+  from { background-position: 0 0;  }
+  to   { background-position: -6380px 0;  }
+}
+
+.invasion:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 4em;
+  margin: -2em -4.25em;
+  text-indent: 1.5em;
+  background: url(../images/explosion.png) no-repeat;
+  width: 7em;
+  height: 4em;
+  -webkit-animation: explosion 0.95s steps(44) 1;
+  -moz-animation: explosion 0.95s steps(44) 1;
+  -o-animation: explosion 0.95s steps(44) 1;
+  animation: explosion 0.95s steps(44) 1;
+  z-index: 10;
+}
+
+.explosion {
+  position: fixed;
+  top: 3em;
+  left: 3em;
+}
+
+
+
