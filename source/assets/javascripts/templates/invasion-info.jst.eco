@@ -1,2 +1,7 @@
 <strong class='date'><%= @year %></strong>
-<em><%= @invader %></em> invaded <em><%= @invaded %></em>
+
+<% if @type is "external": %>
+  <em><%= @invader %></em> invaded <em><%= @invaded %></em>
+<% else: %>
+  Conflict between <em><%= @invader %></em> and <em><%= @invaded %></em>
+<% end %>
