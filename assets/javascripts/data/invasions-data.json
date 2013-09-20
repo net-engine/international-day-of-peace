@@ -7,33 +7,52 @@
       "invasions" : [
         {
           "year" : "1950",
-          "invader" : "South Korea",
-          "invaded" : "North Korea",
-          "coordinates" : [ [35.907756999999997,127.76692199999999], [40.339852,127.510093] ]
-        },
-        {
-          "year" : "1950",
           "invader" : "China",
           "invaded" : "Tibet",
+          "type": "external",
           "coordinates" : [ [35.861660000000001,104.195397], [29.646923000000001,91.117211999999995] ]
         },
         {
           "year" : "1951",
           "invader" : "North Korea",
           "invaded" : "South Korea",
+          "type": "external",
           "coordinates" : [ [40.339852,127.510093], [35.907756999999997,127.76692199999999] ]
+        },
+        {
+          "year" : "1951",
+          "invader" : "South Korea & United Nations",
+          "invaded" : "North Korea",
+          "type": "external",
+          "coordinates" : [ [35.907756999999997,127.76692199999999],[40.339852,127.510093] ]
+        },
+        {
+          "year": "1952",
+          "invader" : "Mau Mau",
+          "invaded" : "Kenya",
+          "type": "internal",
+          "coordinates": [ [1.2667, 36.8000], [1.2667, 36.8000] ]
         },
         {
           "year" : "1956",
           "invader" : "the Soviet Union",
           "invaded" : "Hungary",
+          "type": "external",
           "coordinates" : [ [61.524009999999997,105.31875599999999], [47.162494000000002,19.503304] ]
         },
         {
           "year" : "1956",
           "invader" : "France",
           "invaded" : "Egypt",
+          "type": "external",
           "coordinates" : [ [46.227637999999999,2.213749], [26.820553,30.802498] ]
+        },
+        {
+          "year" : "1958",
+          "invader" : "North Vietnam",
+          "invaded" : "Laos",
+          "type": "external",
+          "coordinates" : [ [14.058324000000001,108.277199], [19.3667, 102.5667] ]
         }
       ]
     },
@@ -45,43 +64,57 @@
           "year" : "1961",
           "invader" : "Indonesia",
           "invaded" : "Netherlands New Guinea",
+          "type": "external",
           "coordinates" : [ [0.78927499999999995,113.92132700000001], [-6.3149930000000003,143.95554999999999] ]
         },
         {
           "year" : "1961",
           "invader" : "India",
           "invaded" : "Goa",
+          "type": "external",
           "coordinates" : [ [20.593684,78.962879999999998], [15.299326499999999,74.123996000000005] ]
         },
         {
           "year" : "1962",
           "invader" : "China",
           "invaded" : "India",
+          "type": "external",
           "coordinates" : [ [35.861660000000001,104.195397], [20.593684,78.962879999999998] ]
         },
         {
           "year" : "1964",
           "invader" : "Cyprus and Greece",
           "invaded" : "the Turkish Cypriot Enclave Kokkina",
+          "type": "external",
           "coordinates" : [ [39.074207999999999,21.824311999999999], [35.179166700000003,32.611666700000001] ]
         },
         {
           "year" : "1965",
           "invader" : "India",
           "invaded" : "Pakistan",
+          "type": "external",
           "coordinates" : [ [20.593684,78.962879999999998], [30.375321,69.345116000000004] ]
         },
         {
           "year" : "1965",
           "invader" : "Pakistan Army and irregulars",
           "invaded" : "India",
+          "type": "external",
           "coordinates" : [ [30.375321,69.345116000000004], [20.593684,78.962879999999998] ]
         },
         {
           "year" : "1965",
           "invader" : "United States",
           "invaded" : "Dominican Republic",
+          "type": "external",
           "coordinates" : [ [37.090240000000001,-95.712890999999999], [18.735693000000001,-70.162650999999997] ]
+        },
+        {
+          "year" : "1967",
+          "invader" : "Nigeria",
+          "invaded" : "Biafria",
+          "type": "external",
+          "coordinates" : [ [8, 10], [6.4500, 7.5000] ]
         }
       ]
     },
@@ -93,60 +126,70 @@
           "year" : "1971",
           "invader" : "India",
           "invaded" : "East Pakistan",
+          "type": "external",
           "coordinates" : [ [20.593684,78.962879999999998], [30.375321,69.345116000000004] ]
         },
         {
           "year" : "1974",
           "invader" : "Turkey",
           "invaded" : "Cyprus",
+          "type": "external",
           "coordinates" : [ [38.963745000000003,35.243321999999999], [35.126412999999999,33.429859] ]
         },
         {
           "year" : "1974",
           "invader" : "China",
           "invaded" : "Paracel Islands",
+          "type": "external",
           "coordinates" : [ [35.861660000000001,104.195397], [16.204552,111.793104] ]
         },
         {
           "year" : "1975",
           "invader" : "Vietnam",
           "invaded" : "Poulo Wai Island",
+          "type": "external",
           "coordinates" : [ [14.058324000000001,108.277199], [9.9166667000000004,102.91666669999999] ]
         },
         {
           "year" : "1975",
           "invader" : "Democratic Republic of North Vietnam",
           "invaded" : "South Vietnam",
+          "type": "external",
           "coordinates" : [ [14.058324000000001,108.277199], [14.058324000000001,108.277199] ]
         },
         {
           "year" : "1978",
           "invader" : "Vietnam",
           "invaded" : "Cambodia",
+          "type": "external",
           "coordinates" : [ [14.058324000000001,108.277199], [12.565678999999999,104.99096299999999] ]
         },
         {
           "year" : "1979",
           "invader" : "the Soviet Union",
           "invaded" : "Afghanistan",
+          "type": "external",
           "coordinates" : [ [61.524009999999997,105.31875599999999], [33.939109999999999,67.709952999999999] ]
         },
         {
           "year" : "1979",
           "invader" : "Vietnam",
           "invaded" : "Thailand",
+          "type": "external",
           "coordinates" : [ [14.058324000000001,108.277199], [15.870032,100.992541] ]
         },
         {
           "year" : "1979",
           "invader" : "China",
           "invaded" : "Northern Vietnam",
+          "type": "external",
           "coordinates" : [ [35.861660000000001,104.195397], [14.058324000000001,108.277199] ]
         },
         {
           "year" : "1979",
           "invader" : "Tanzania",
           "invaded" : "Uganda",
+          "type": "external",
           "coordinates" : [ [6.3690280000000001,34.888821999999998], [1.3733329999999999,32.290275000000001] ]
         }
       ]
@@ -157,27 +200,45 @@
       "invasions" : [
         {
           "year" : "1982",
+          "invader" : "Argentina",
+          "invaded" : "Falkland Islands",
+          "type": "external",
+          "coordinates" : [ [-37.1833,-67.3667], [-51.6833,-59.1667] ]
+        },
+        {
+          "year" : "1982",
           "invader" : "Israel",
           "invaded" : "Lebanon",
+          "type": "external",
           "coordinates" : [ [31.046050999999999,34.851612000000003], [33.854720999999998,35.862285] ]
         },
         {
           "year" : "1983",
           "invader" : "the United States and allied Caribbean nations",
           "invaded" : "Grenada",
+          "type": "external",
           "coordinates" : [ [40.729396000000001,-74.001306], [12.1165,-61.679000000000002] ]
         },
         {
           "year" : "1988",
           "invader" : "China",
           "invaded" : "Spratly Islands",
+          "type": "external",
           "coordinates" : [ [35.861660000000001,104.195397], [10.181333499999999,114.3650818] ]
         },
         {
           "year" : "1989",
           "invader" : "the United States",
           "invaded" : "Panama",
+          "type": "external",
           "coordinates" : [ [40.729396000000001,-74.001306], [8.5379810000000003,-80.782127000000003] ]
+        },
+        {
+          "year" : "1989",
+          "invader" : "National Patriotic Front of Liberia",
+          "invaded" : "Liberia",
+          "type": "external",
+          "coordinates" : [ [8,-6], [6.5333,-9.7500] ]
         }
       ]
     },
@@ -186,16 +247,39 @@
       "occurrences": 159,
       "invasions" : [
         {
+          "year" : "1990",
+          "invader" : "Iraq",
+          "invaded" : "Kuwait",
+          "type": "external",
+          "coordinates" : [ [33.3333,44.3833], [29.31166,47.481766] ]
+        },
+        {
           "year" : "1991",
           "invader" : "the United States",
           "invaded" : "Kuwait",
+          "type": "external",
           "coordinates" : [ [40.729396000000001,-74.001306], [29.31166,47.481766] ]
+        },
+        {
+          "year" : "1994",
+          "invader" : "MDF led by United States",
+          "invaded" : "Haiti",
+          "type": "external",
+          "coordinates" : [ [40.729396000000001,-74.001306], [18.5333,-72.3333] ]
         },
         {
           "year" : "1998",
           "invader" : "Eritrea",
           "invaded" : "Ethiopia",
+          "type": "external",
           "coordinates" : [ [15.179384000000001,39.782333999999999], [9.1449999999999996,40.489673000000003] ]
+        },
+        {
+          "year" : "1999",
+          "invader" : "NATO / USA",
+          "invaded" : "Yugoslavia",
+          "type": "external",
+          "coordinates" : [ [40.729396000000001,-74.001306], [44.8206, 20.4622] ]
         }
       ]
     },
@@ -207,42 +291,49 @@
           "year" : "2001",
           "invader" : "United States-led coalition",
           "invaded" : "Afghanistan",
+          "type": "external",
           "coordinates" : [ [40.729396000000001,-74.001306], [33.939109999999999,67.709952999999999] ]
         },
         {
           "year" : "2003",
           "invader" : "United States-led coalition",
           "invaded" : "Iraq",
+          "type": "external",
           "coordinates" : [ [40.729396000000001,-74.001306], [33.223191,43.679290999999999] ]
         },
         {
           "year" : "2006",
           "invader" : "Ethiopia",
           "invaded" : "Somalia",
+          "type": "external",
           "coordinates" : [ [9.1449999999999996,40.489673000000003], [5.1521489999999996,46.199615999999999] ]
         },
         {
           "year" : "2006",
           "invader" : "Israel",
           "invaded" : "Lebanon",
+          "type": "external",
           "coordinates" : [ [31.046050999999999,34.851612000000003], [33.854720999999998,35.862285] ]
         },
         {
           "year" : "2008",
           "invader" : "Israel",
           "invaded" : "Gaza",
+          "type": "external",
           "coordinates" : [ [31.046050999999999,34.851612000000003], [31.522561,34.453592999999998] ]
         },
         {
           "year" : "2008",
           "invader" : "Russia",
           "invaded" : "Georgia",
+          "type": "external",
           "coordinates" : [ [61.524009999999997,105.31875599999999], [42.0167,43.7333] ]
         },
         {
           "year" : "2008",
           "invader" : "African Union",
           "invaded" : "Anjouan",
+          "type": "external",
           "coordinates" : [ [9.0227360000000001,38.746799000000003], [-12.2138145,44.437060600000002] ]
         }
       ]

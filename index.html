@@ -16,27 +16,56 @@
   <body class='index'>
     <div id='map'></div>
     <h1>
-      International Day of Peace 2013
+      World conflicts
       <a class="hashtag" href="https://twitter.com/search?q=%23PeaceDay">#PeaceDay</a>
     </h1>
     <div class='info box' id='info'></div>
-    <div class='invasion-info box' id='invasion-info'></div>
-    <div class='box chart-box' id='chart-box'>
-      <div id='chart'></div>
-      <div id='conflicts-map'></div>
+    <div class='invasion-info box'>
+      <div id='invasion-info'></div>
     </div>
-    <ul class='sources'>
-      <li><a href="http://www.sipri.org/yearbook/2010/files/SIPRIYB201002A.pdf">Patterns of major armed conflicts, 2000–2009</a></li>
-      <li><a href="http://www.prio.no/Data/Armed-Conflict/UCDP-PRIO/Armed-Conflicts-Version-X-2009/">UCDP/PRIO Armed Conflict Dataset</a></li>
-      <li><a href="http://wrathgames.com/blog/"></a></li>
-    </ul>
+    <div class='column'>
+      <div class='box chart-box' id='chart-box'>
+        <div class='blurb'>
+          <p>The overall number of conflicts is trending down, but the number of internal conflicts is rising.</p>
+          <p>How can we make the world a more peaceful place? Tweet with <strong>#PeaceDay</strong>.</p>
+          <ul class='sources'>
+            <label>Sources:</label>
+            <li><a href="http://www.sipri.org/yearbook/2010/files/SIPRIYB201002A.pdf">Patterns of major armed conflicts, 2000–2009</a></li>
+            <li><a href="http://www.prio.no/Data/Armed-Conflict/UCDP-PRIO/Armed-Conflicts-Version-X-2009/">UCDP/PRIO Armed Conflict Dataset</a></li>
+          </ul>
+        </div>
+        <div class='progress'></div>
+        <div class='chart-wrapper active'>
+          <header>
+            <h1 class='title'>Conflicts by Type</h1>
+            <legend>
+              <label><span style="background-color: black"></span> War</label>
+              <label><span style="background-color: maroon"></span> Minor conflict</label>
+            </legend>
+          </header>
+          <div class='chart' id='chart1'></div>
+        </div>
+        <div class='chart-wrapper'>
+          <header>
+            <h1 class='title'>Conflicts by region</h1>
+            <legend>
+              <label><span style="background-color: black"></span> Europe</label>
+              <label><span style="background-color: maroon"></span> Middle East</label>
+              <label><span style="background-color: red"></span> Asia</label>
+              <label><span style="background-color: orange"></span> Africa</label>
+              <label><span style="background-color: yellow"></span> Americas</label>
+            </legend>
+          </header>
+          <div class='chart' id='chart2'></div>
+        </div>
+      </div>
+      <div class='twitter-feed box'>
+        <div id='tweets'></div>
+      </div>
+    </div>
     <div class='logos'>
       <a class="logo" href="http://netengine.com.au"><img src="assets/images/ne-logo.png" /></a>
       <a class="logo" href="http://www.tedxbrisbane.com"><img src="assets/images/tedx-logo.png" /></a>
     </div>
-    <div class='twitter-feed box'>
-      <div id='tweets'></div>
-    </div>
-    <div class='explosion'></div>
   </body>
 </html>
