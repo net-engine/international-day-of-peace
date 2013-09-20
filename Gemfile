@@ -8,4 +8,5 @@ gem "middleman", "~>3.0.14"
 gem "eco"
 
 # Build Support
-gem 'middleman-gh-pages'
+# gem 'middleman-gh-pages'
+gem "middleman-sync", "~> 3.0.12"

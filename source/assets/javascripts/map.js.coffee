@@ -10,6 +10,10 @@ $ ->
   else
     window.basepath = "/assets"
 
+  setTimeout (->
+    $('.chart-wrapper').toggleClass('active')
+  ), 6000
+
   map_options =
     minZoom: 2
     noWrap: true
@@ -32,38 +36,67 @@ $ ->
 
   boundaries.addTo(map);
 
-  window.graph = Morris.Area
-    element: 'chart'
-    # barColors: ['hsl(0,25%,15%)', 'maroon']
+  window.graph1_data = [
+    { y: '1990', 'minor': 35, 'war': 15, 'total': 50 }
+    { y: '1991', 'minor': 39, 'war': 13, 'total': 52 }
+    { y: '1992', 'minor': 40, 'war': 12, 'total': 52 }
+    { y: '1993', 'minor': 35, 'war': 10, 'total': 45 }
+    { y: '1994', 'minor': 35, 'war': 11, 'total': 46 }
+    { y: '1995', 'minor': 33, 'war': 8, 'total': 41 }
+    { y: '1996', 'minor': 33, 'war': 8, 'total': 41 }
+    { y: '1997', 'minor': 32, 'war': 7, 'total': 39 }
+    { y: '1998', 'minor': 28, 'war': 12, 'total': 40 }
+    { y: '1999', 'minor': 26, 'war': 13, 'total': 39 }
+    { y: '2000', 'minor': 27, 'war': 10, 'total': 37 }
+    { y: '2001', 'minor': 28, 'war': 9, 'total': 37 }
+    { y: '2002', 'minor': 26, 'war': 6, 'total': 32 }
+    { y: '2003', 'minor': 26, 'war': 5, 'total': 31 }
+    { y: '2004', 'minor': 25, 'war': 7, 'total': 32 }
+    { y: '2005', 'minor': 28, 'war': 5, 'total': 33 }
+    { y: '2006', 'minor': 29, 'war': 5, 'total': 34 }
+    { y: '2007', 'minor': 31, 'war': 4, 'total': 35 }
+    { y: '2008', 'minor': 33, 'war': 5, 'total': 38 }
+    { y: '2009', 'minor': 30, 'war': 6, 'total': 36 }
+    { y: '2010', 'minor': 27, 'war': 4, 'total': 31 }
+    { y: '2011', 'minor': 31, 'war': 6, 'total': 37 }
+    { y: '2012', 'minor': 26, 'war': 6, 'total': 32 }
+  ]
+
+
+  window.graph2_data = [
+    { y: "1990", "europe": 3, "middleast": 7, "asia": 21, "africa": 13, "americas": 6 }
+    { y: "1991", "europe": 7, "middleast": 8, "asia": 15, "africa": 17, "americas": 5 }
+    { y: "1992", "europe": 8, "middleast": 7, "asia": 19, "africa": 14, "americas": 4 }
+    { y: "1993", "europe": 9, "middleast": 7, "asia": 15, "africa": 11, "americas": 3 }
+    { y: "1994", "europe": 5, "middleast": 6, "asia": 16, "africa": 15, "americas": 4 }
+    { y: "1995", "europe": 5, "middleast": 6, "asia": 16, "africa": 10, "americas": 4 }
+    { y: "1996", "europe": 1, "middleast": 7, "asia": 18, "africa": 12, "americas": 3 }
+    { y: "1997", "europe": 0, "middleast": 4, "asia": 19, "africa": 14, "americas": 2 }
+    { y: "1998", "europe": 2, "middleast": 3, "asia": 16, "africa": 17, "americas": 2 }
+    { y: "1999", "europe": 3, "middleast": 3, "asia": 15, "africa": 16, "americas": 2 }
+    { y: "2000", "europe": 1, "middleast": 3, "asia": 17, "africa": 15, "americas": 1 }
+    { y: "2001", "europe": 2, "middleast": 3, "asia": 14, "africa": 16, "americas": 2 }
+    { y: "2002", "europe": 1, "middleast": 2, "asia": 12, "africa": 15, "americas": 2 }
+    { y: "2003", "europe": 1, "middleast": 3, "asia": 15, "africa": 11, "americas": 1 }
+    { y: "2004", "europe": 2, "middleast": 3, "asia": 14, "africa": 10, "americas": 3 }
+    { y: "2005", "europe": 2, "middleast": 5, "asia": 17, "africa": 7, "americas": 2 }
+    { y: "2006", "europe": 1, "middleast": 5, "asia": 16, "africa": 10, "americas": 2 }
+    { y: "2007", "europe": 2, "middleast": 4, "asia": 14, "africa": 12, "americas": 3 }
+    { y: "2008", "europe": 2, "middleast": 4, "asia": 16, "africa": 13, "americas": 3 }
+    { y: "2009", "europe": 1, "middleast": 5, "asia": 15, "africa": 12, "americas": 3 }
+    { y: "2010", "europe": 1, "middleast": 5, "asia": 12, "africa": 10, "americas": 3 }
+    { y: "2011", "europe": 1, "middleast": 6, "asia": 13, "africa": 15, "americas": 2 }
+    { y: "2012", "europe": 2, "middleast": 5, "asia": 10, "africa": 13, "americas": 2 }
+  ]
+
+
+  window.graph1 = Morris.Area
+    element: 'chart1'
+    data: graph1_data
+    ykeys: ['war', 'minor']
+    labels: ['War', 'Minor']
     stacked: true
-    data: [
-      { y: '1990', 'minor': 35, 'war': 15, 'total': 50 }
-      { y: '1991', 'minor': 39, 'war': 13, 'total': 52 }
-      { y: '1992', 'minor': 40, 'war': 12, 'total': 52 }
-      { y: '1993', 'minor': 35, 'war': 10, 'total': 45 }
-      { y: '1994', 'minor': 35, 'war': 11, 'total': 46 }
-      { y: '1995', 'minor': 33, 'war': 8, 'total': 41 }
-      { y: '1996', 'minor': 33, 'war': 8, 'total': 41 }
-      { y: '1997', 'minor': 32, 'war': 7, 'total': 39 }
-      { y: '1998', 'minor': 28, 'war': 12, 'total': 40 }
-      { y: '1999', 'minor': 26, 'war': 13, 'total': 39 }
-      { y: '2000', 'minor': 27, 'war': 10, 'total': 37 }
-      { y: '2001', 'minor': 28, 'war': 9, 'total': 37 }
-      { y: '2002', 'minor': 26, 'war': 6, 'total': 32 }
-      { y: '2003', 'minor': 26, 'war': 5, 'total': 31 }
-      { y: '2004', 'minor': 25, 'war': 7, 'total': 32 }
-      { y: '2005', 'minor': 28, 'war': 5, 'total': 33 }
-      { y: '2006', 'minor': 29, 'war': 5, 'total': 34 }
-      { y: '2007', 'minor': 31, 'war': 4, 'total': 35 }
-      { y: '2008', 'minor': 33, 'war': 5, 'total': 38 }
-      { y: '2009', 'minor': 30, 'war': 6, 'total': 36 }
-      { y: '2010', 'minor': 27, 'war': 4, 'total': 31 }
-      { y: '2011', 'minor': 31, 'war': 6, 'total': 37 }
-      { y: '2012', 'minor': 26, 'war': 6, 'total': 32 }
-    ]
     xkey: 'y'
-    ykeys: ['minor', 'war', 'total']
-    labels: ['Minor', 'War', 'Total']
     gridTextFamily: 'Lora',
     gridTextColor: 'hsl(0, 25%, 10%)'
     pointSize: 0
@@ -71,7 +104,24 @@ $ ->
     hideHover: true
     smooth: false
     fillOpacity: .45
-    lineColors: ['black', 'maroon', 'red']
+    lineColors: ['black', 'maroon']
+
+  window.graph2 = Morris.Area
+    element: 'chart2'
+    data: graph2_data
+    ykeys: ['europe', 'middleast', 'asia', 'africa', 'americas']
+    labels: ['Europe', 'Middle East', 'Asia', 'Africa', 'Americas']
+    stacked: true
+    xkey: 'y'
+    gridTextFamily: 'Lora',
+    gridTextColor: 'hsl(0, 25%, 10%)'
+    pointSize: 0
+    lineWidth: 3
+    hideHover: true
+    smooth: false
+    fillOpacity: .45
+    lineColors: ['black', 'maroon']
+
 
   setTimeout (->
     animation()
@@ -101,13 +151,14 @@ jQuery.extend getValues: (url) ->
   result
 
 
-window.toggleChart = (time) ->
+window.toggleChart = (time = 350) ->
   chart = $('#chart-box')
 
   chart.toggleClass('large')
   setTimeout (->
     chart.find('svg').attr('height', chart.height()).attr('width', chart.width())
-    graph.redraw()
+    graph1.redraw()
+    graph2.redraw()
   ), time + 10
 
 
@@ -138,6 +189,9 @@ window.animation = ->
   $.eachStep decades, full_duration, (i, decade) ->
     index++
     count = decade.invasions.length
+
+    if count is Math.round(decade.invasions.length / 2)
+      $('.chart-wrapper').toggleClass('active');
 
     map.removeLayer(featureGroup) if featureGroup?
     window.featureGroup = L.featureGroup().addTo(map)

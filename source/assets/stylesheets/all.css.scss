@@ -39,8 +39,8 @@ body {
 strong { font-weight: 700; }
 em { font-style: italic; }
 
-a {
-  color: #444;
+a, .leaflet-container a {
+  color: maroon;
 }
 
 #map {
@@ -111,9 +111,13 @@ h1 {
   left: 0;
   width: 30%;
   height: 25%;
-  padding: 2.5em 0 .5em .5em;
   -webkit-font-smoothing: antialiased;
   @include transition(all .3s linear);
+
+  .blurb {
+    display: none;
+  }
+
 
   &.large {
     bottom: 20%;
@@ -123,29 +127,89 @@ h1 {
     z-index: 100;
     @include box-sizing(border-box);
 
-    #chart {
+    .chart-wrapper {
+      position: relative;
+      visibility: visible;
+      float: left;
       width: 50%;
       height: 50%;
-      position: absolute !important;
-      bottom: 0;
+    }
+
+    .blurb {
+      display: block;
+      height: 50%;
+      font-size: 2em;
+      line-height: 1.45em;
+      text-align: center;
+
+      .sources {
+        font-size: 50%;
+
+        li {
+          display: inline-block;
+        }
+      }
+    }
+
+  }
+
+  .chart-wrapper {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 3em;
+    box-sizing: border-box;
+
+    &.active { visibility: visible; }
+
+    header {
+      position: absolute;
+      top: 0;
       left: 0;
-      margin: 1em;
+      right: 0;
+      height: 1em;
+      padding: 1em;
+      line-height: 1em;
+    }
+
+    .title {
+      float: left;
+      position: static;
+      color: #201313;
+      font-style: italic;
+      font-size: 1em;
+      padding: 0;
+      margin-bottom: .5em;
+    }
+
+    legend {
+      float: right;
+
+      label {
+        position: relative;
+        padding-left: 1em;
+        margin-left: .5em;
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: .5em;
+          height: .5em;
+          margin-top: -.25em;
+        }
+      }
+    }
+
+    .chart {
+      width: 100%;
+      height: 100%;
     }
   }
 
-  #chart {
-    width: 100%;
-    height: 100%;
-  }
-
-  &:before {
-    content: 'Conflicts';
-    position: absolute;
-    top: 1em;
-    left: 1.25em;
-    color: hsl(0, 25%, 10%);
-    font-style: italic;
-  }
 }
 
 #conflicts-map {
@@ -179,7 +243,14 @@ h1 {
 }
 
 
-.morris-hover { display: none !important; }
+.morris-hover.morris-default-style {
+  border: none;
+  border-radius: 2px;
+  padding: 1em;
+  font: 100%/1.5em Lora;
+
+  .morris-hover-point { font-style: italic; }
+}
 
 .info, .invasion-info {
   top: 0;
@@ -193,6 +264,8 @@ h1 {
 }
 
 .invasion-info { right: 9em; }
+
+#invasion-info { font-size: 1.5em; }
 
 .decade-title {
   font-size: 2em;
@@ -210,7 +283,7 @@ h1 {
   display: block;
   background: aliceblue;
   border-radius: 50%;
-  box-shadow: 0 0 0 .25em rgba(0,0,0,.25);
+  box-shadow: 0 0 0 .25em rgba(black, .25);
   z-index: 100 !important;
 
   @include transition(all $duration ease-in-out);
@@ -276,6 +349,7 @@ h1 {
   top: 4.5em;
   bottom: 2.5em;
   width: 30%;
+  max-width: 24em;
   background: transparent;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -324,7 +398,7 @@ h1 {
 #tweets ul {
   padding: 1em;
   padding-top: 0;
-  background: rgba(white, .75);
+  background: rgba(white, .85);
 }
 
 
@@ -347,11 +421,14 @@ h1 {
   right: 0;
   bottom: 0;
   height: 1.5em;
-  margin: 1em;
+  margin: .5em 1em;
+  padding: .5em .75em;
+  background: rgba(black, .5);
+  padding-left: 0;
 
   .logo {
     float: left;
-    margin-left: 1em;
+    margin-left: .75em;
     height: 1.5em;
   }
 
@@ -409,3 +486,41 @@ h1 {
 
 
 
+
+
+.tweets-marker-icon {
+  display: block;
+  border-radius: 50%;
+  background: dimgrey;
+  color: white;
+  z-index: 101 !important;
+  width: 2em !important;
+  height: 2em !important;
+  text-align: center;
+  line-height: 2em;
+  margin: -1em !important;
+  @extend .icon-twitter;
+
+  .tweet-overlay {
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    margin-left: -7em;
+    background: rgba(white, .85);
+    color: #333;
+    padding: .75em 1em;
+    width: 12em;
+    font-size: 85%;
+    line-height: 1.5em;
+
+    &:before {
+      content: '';
+      border: 10px solid transparent;
+      border-bottom-color: rgba(255,255,255,.85);
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      margin-left: -10px;
+    }
+  }
+}
