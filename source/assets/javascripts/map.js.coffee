@@ -1,7 +1,7 @@
 
 # Init
 
-duration = 2000
+duration = 1800
 full_duration = duration * 15
 
 $ ->
@@ -169,7 +169,7 @@ onEachFeature = (feature, layer) ->
 window.restart = ->
   map.removeLayer(featureGroup)
   animation()
-  toggleChart(300)
+  toggleChart()
   $("#info, .invasion-info.box").show()
 
 
@@ -226,7 +226,7 @@ window.animation = ->
 
     if index is decades.length
       setTimeout (->
-        toggleChart(300)
+        toggleChart()
         $("#info, .invasion-info.box").fadeOut()
       ), full_duration * 2
 

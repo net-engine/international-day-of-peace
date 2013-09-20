@@ -9,6 +9,9 @@ class @TweetsMapDisplayer
     #rebind hover and click actions
     @bindTweetActions()
 
+    setTimeout (->
+      $('tweet-overlay').fadeOut()
+    ), 6000
 
   buildHTMLFromElement : (tweet, lat, lon) ->
     d       = document.createElement('div')
@@ -70,5 +73,5 @@ class @TweetsMapDisplayer
     $('.leaflet-marker-icon').removeClass('active')
 
     $("#info-box-tweets .info-box-title").click()
-    
+
     $tweet.find('.tweet-overlay').show()

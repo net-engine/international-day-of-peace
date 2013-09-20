@@ -117,12 +117,17 @@ h1 {
 
 }
 
-.chart-box {
+.twitter-feed, .chart-box {
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
-  height: 30%;
+  box-sizing: border-box;
+  margin: 0 1em;
+}
+
+.chart-box {
+  bottom: 0;
+  top: 65%;
   -webkit-font-smoothing: antialiased;
 
   .blurb {
@@ -319,9 +324,9 @@ h1 {
 .column {
   width: 30em;
   position: fixed;
-  top: 3em;
+  top: 3.5em;
   left: 0;
-  bottom: 4.5em;
+  bottom: 5.5em;
 
   &.large {
     right: 0;
@@ -345,11 +350,17 @@ h1 {
       }
 
       .blurb {
+        padding: 1em 0 0;
         display: block;
         height: 50%;
         font-size: 2em;
         line-height: 1.45em;
         text-align: center;
+        box-sizing: border-box;
+
+        p {
+          margin: 0 0 .5em;
+        }
 
         .sources {
           font-size: 50%;
@@ -364,7 +375,7 @@ h1 {
     .twitter-feed {
       left: 1em;
       right: 70%;
-      bottom: 2em;
+      bottom: -1em;
       width: auto;
       max-width: 100000px;
       margin-left: 0;
@@ -375,16 +386,13 @@ h1 {
 
 
 .twitter-feed {
-  position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 40%;
+  bottom: 35%;
   background: transparent;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 0;
-  margin-bottom: -1em;
+  margin-bottom: 1em;
 
   li {
     border-top: 1px dashed white;
