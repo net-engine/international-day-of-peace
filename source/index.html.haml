@@ -9,45 +9,45 @@
 .invasion-info.box
   #invasion-info
 
+.column
+  #chart-box.box.chart-box
+    .blurb
+      %p The overall number of conflicts is trending down, but the number of internal conflicts is rising.
+      %p How can we make the world a more peaceful place? Tweet with <strong>#PeaceDay</strong>.
 
-#chart-box.box.chart-box
-  .blurb
-    %p The overall number of conflicts is trending down, but the number of internal conflicts is rising.
-    %p How can we make the world a more peaceful place? Tweet with <strong>#PeaceDay</strong>.
+      %ul.sources
+        %label Sources:
+        %li= link_to 'Patterns of major armed conflicts, 2000–2009', 'http://www.sipri.org/yearbook/2010/files/SIPRIYB201002A.pdf'
+        %li= link_to 'UCDP/PRIO Armed Conflict Dataset', 'http://www.prio.no/Data/Armed-Conflict/UCDP-PRIO/Armed-Conflicts-Version-X-2009/'
+        -# %li= link_to '', 'http://wrathgames.com/blog/'
 
-    %ul.sources
-      %li= link_to 'Patterns of major armed conflicts, 2000–2009', 'http://www.sipri.org/yearbook/2010/files/SIPRIYB201002A.pdf'
-      %li= link_to 'UCDP/PRIO Armed Conflict Dataset', 'http://www.prio.no/Data/Armed-Conflict/UCDP-PRIO/Armed-Conflicts-Version-X-2009/'
-      %li= link_to '', 'http://wrathgames.com/blog/'
+    .progress
 
+    .chart-wrapper.active
+      %header
+        %h1.title Conflicts by Type
+        %legend
+          %label <span style="background-color: black"></span> War
+          %label <span style="background-color: maroon"></span> Minor conflict
 
-  .chart-wrapper.active
-    %header
-      %h1.title Total conflicts by Type
-      %legend
-        %label <span style="background-color: maroon"></span> War
-        %label <span style="background-color: maroon"></span> Minor conflict
+      #chart1.chart
 
-    #chart1.chart
+    .chart-wrapper
+      %header
+        %h1.title Conflicts by region
+        %legend
+          %label <span style="background-color: black"></span> Europe
+          %label <span style="background-color: maroon"></span> Middle East
+          %label <span style="background-color: red"></span> Asia
+          %label <span style="background-color: orange"></span> Africa
+          %label <span style="background-color: yellow"></span> Americas
 
-  .chart-wrapper
-    %header
-      %h1.title Conflicts by region
-      %legend
-        %label <span style="background-color: maroon"></span> Europe
-        %label <span style="background-color: maroon"></span> Middle East
-        %label <span style="background-color: maroon"></span> Asia
-        %label <span style="background-color: maroon"></span> Africa
-        %label <span style="background-color: maroon"></span> Americas
+      #chart2.chart
 
-    #chart2.chart
+  .twitter-feed.box
+    #tweets
 
 .logos
   = link_to image_tag('ne-logo.png'), 'http://netengine.com.au', class: 'logo'
   = link_to image_tag('tedx-logo.png'), 'http://www.tedxbrisbane.com', class: 'logo'
 
-.twitter-feed.box
-  #tweets
-
-
-.explosion

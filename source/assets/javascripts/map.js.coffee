@@ -1,7 +1,7 @@
 
 # Init
 
-duration = 1000
+duration = 2000
 full_duration = duration * 15
 
 $ ->
@@ -10,16 +10,12 @@ $ ->
   else
     window.basepath = "/assets"
 
-  setTimeout (->
-    $('.chart-wrapper').toggleClass('active')
-  ), 6000
-
   map_options =
     minZoom: 2
     noWrap: true
 
   window.map = L.mapbox.map('map', 'netengine.map-vfsy08ln', map_options)
-    .setView([29,58], 2)
+    .setView([31.5,-12.4], 2)
 
   decades = $.getValues "#{basepath}/javascripts/data/invasions-data.json"
   window.decades = decades.features
@@ -31,7 +27,7 @@ $ ->
       color: "red"
       weight: 1,
       fillOpacity: 0.1
-    onEachFeature: onEachFeature
+    # onEachFeature: onEachFeature
   )
 
   boundaries.addTo(map);
@@ -89,38 +85,36 @@ $ ->
     { y: "2012", "europe": 2, "middleast": 5, "asia": 10, "africa": 13, "americas": 2 }
   ]
 
+  window.graph_options =
+    # events: ["2013-09-21"]
+    eventLineColors: ['whitesmoke']
+    eventStrokeWidth: 2
+    stacked: true
+    xkey: 'y'
+    gridTextFamily: 'Lora',
+    gridTextColor: 'hsl(0, 25%, 10%)'
+    pointSize: 0
+    lineWidth: 3
+    hideHover: true
+    smooth: false
+    fillOpacity: .45
+    lineColors: ['black', 'maroon', 'red', 'orange', 'yellow']
 
-  window.graph1 = Morris.Area
+  graph1_options =
     element: 'chart1'
     data: graph1_data
     ykeys: ['war', 'minor']
     labels: ['War', 'Minor']
-    stacked: true
-    xkey: 'y'
-    gridTextFamily: 'Lora',
-    gridTextColor: 'hsl(0, 25%, 10%)'
-    pointSize: 0
-    lineWidth: 3
-    hideHover: true
-    smooth: false
-    fillOpacity: .45
-    lineColors: ['black', 'maroon']
 
-  window.graph2 = Morris.Area
+  window.graph1 = Morris.Area($.extend(graph1_options, graph_options))
+
+  graph2_options =
     element: 'chart2'
     data: graph2_data
     ykeys: ['europe', 'middleast', 'asia', 'africa', 'americas']
     labels: ['Europe', 'Middle East', 'Asia', 'Africa', 'Americas']
-    stacked: true
-    xkey: 'y'
-    gridTextFamily: 'Lora',
-    gridTextColor: 'hsl(0, 25%, 10%)'
-    pointSize: 0
-    lineWidth: 3
-    hideHover: true
-    smooth: false
-    fillOpacity: .45
-    lineColors: ['black', 'maroon']
+
+  window.graph2 = Morris.Area($.extend(graph2_options, graph_options))
 
 
   setTimeout (->
@@ -151,15 +145,16 @@ jQuery.extend getValues: (url) ->
   result
 
 
-window.toggleChart = (time = 350) ->
+window.toggleChart = (time = 150) ->
   chart = $('#chart-box')
 
-  chart.toggleClass('large')
+  $('.column').toggleClass('large')
+
   setTimeout (->
     chart.find('svg').attr('height', chart.height()).attr('width', chart.width())
     graph1.redraw()
     graph2.redraw()
-  ), time + 10
+  ), time
 
 
 onEachFeature = (feature, layer) ->
@@ -175,6 +170,7 @@ window.restart = ->
   map.removeLayer(featureGroup)
   animation()
   toggleChart(300)
+  $("#info, .invasion-info.box").show()
 
 
 window.animation = ->
@@ -190,8 +186,9 @@ window.animation = ->
     index++
     count = decade.invasions.length
 
-    if count is Math.round(decade.invasions.length / 2)
-      $('.chart-wrapper').toggleClass('active');
+    $('.chart-wrapper').toggleClass('active');
+
+    # console.log decade.decade
 
     map.removeLayer(featureGroup) if featureGroup?
     window.featureGroup = L.featureGroup().addTo(map)
@@ -230,7 +227,7 @@ window.animation = ->
     if index is decades.length
       setTimeout (->
         toggleChart(300)
-        $('#refresh').show()
+        $("#info, .invasion-info.box").fadeOut()
       ), full_duration * 2
 
       setTimeout (->

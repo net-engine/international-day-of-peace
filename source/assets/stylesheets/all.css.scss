@@ -10,6 +10,17 @@ $duration: 500ms;
 
 $bg-red: #e54c4c;
 
+.clearfix {
+  zoom: 1;
+
+  &:before, &:after {
+    content: '';
+    display: inline-block;
+    display: table;
+    clear: both;
+  }
+}
+
 body {
   font: normal 100%/1.5em 'Lora', serif;
   -webkit-font-smoothing: antialised;
@@ -73,7 +84,7 @@ h1 {
 .box {
   position: fixed;
   background: white;
-  background: rgba(255,255,255,.75);
+  background: rgba(white, .85);
   padding: 1em;
   margin: 1em;
 }
@@ -107,50 +118,15 @@ h1 {
 }
 
 .chart-box {
+  position: absolute;
   bottom: 0;
   left: 0;
-  width: 30%;
-  height: 25%;
+  right: 0;
+  height: 30%;
   -webkit-font-smoothing: antialiased;
-  @include transition(all .3s linear);
 
   .blurb {
     display: none;
-  }
-
-
-  &.large {
-    bottom: 20%;
-    left: 10%;
-    width: 80%;
-    height: 60%;
-    z-index: 100;
-    @include box-sizing(border-box);
-
-    .chart-wrapper {
-      position: relative;
-      visibility: visible;
-      float: left;
-      width: 50%;
-      height: 50%;
-    }
-
-    .blurb {
-      display: block;
-      height: 50%;
-      font-size: 2em;
-      line-height: 1.45em;
-      text-align: center;
-
-      .sources {
-        font-size: 50%;
-
-        li {
-          display: inline-block;
-        }
-      }
-    }
-
   }
 
   .chart-wrapper {
@@ -212,15 +188,16 @@ h1 {
 
 }
 
-#conflicts-map {
-  display: none;
-  position: absolute !important;
-  bottom: 0;
-  right: 0;
-  margin: 1em;
-  width: 50%;
-  height: 50%;
-}
+
+// .progress {
+//   position: absolute;
+//   top: 1.5em;
+//   margin-left: 2.75em;
+//   left: 0;
+//   bottom: 2.5em;
+//   border-left: 2px solid white;
+// }
+
 
 .refresh-button {
   left: 0;
@@ -253,17 +230,15 @@ h1 {
 }
 
 .info, .invasion-info {
-  top: 0;
+  bottom: 0;
+  left: 0;
   height: 1.5em;
   text-align: center;
 }
 
-.info {
-  right: 0;
-  width: 6em;
-}
+.info { width: 6em; }
 
-.invasion-info { right: 9em; }
+.invasion-info { left: 9em; }
 
 #invasion-info { font-size: 1.5em; }
 
@@ -341,19 +316,75 @@ h1 {
 
 
 
+.column {
+  width: 30em;
+  position: fixed;
+  top: 3em;
+  left: 0;
+  bottom: 4.5em;
 
+  &.large {
+    right: 0;
+    width: auto;
+
+    #chart-box {
+      top: 0;
+      right: 0;
+      left: 30%;
+      height: auto;
+      width: auto;
+      z-index: 100;
+      @include box-sizing(border-box);
+
+      .chart-wrapper {
+        position: relative;
+        visibility: visible;
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      .blurb {
+        display: block;
+        height: 50%;
+        font-size: 2em;
+        line-height: 1.45em;
+        text-align: center;
+
+        .sources {
+          font-size: 50%;
+
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .twitter-feed {
+      left: 1em;
+      right: 70%;
+      bottom: 2em;
+      width: auto;
+      max-width: 100000px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
 
 
 .twitter-feed {
+  position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  top: 4.5em;
-  bottom: 2.5em;
-  width: 30%;
-  max-width: 24em;
+  bottom: 40%;
   background: transparent;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 0;
+  margin-bottom: -1em;
 
   li {
     border-top: 1px dashed white;
