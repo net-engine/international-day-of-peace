@@ -10,7 +10,7 @@ class @TweetsMapDisplayer
     @bindTweetActions()
 
     setTimeout (->
-      $('tweet-overlay').fadeOut()
+      $('.tweet-overlay').fadeOut()
     ), 6000
 
   buildHTMLFromElement : (tweet, lat, lon) ->
