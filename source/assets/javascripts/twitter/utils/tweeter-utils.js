@@ -13,17 +13,35 @@ var tweeterUtils = (function(){
     return text.match(/\B#\w+/gi);
   };
 
+  var extractURLs = function(text){
+    return text.match(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi);
+  };
+
   var buildLinkForUsername = function(username){
-    username = username.substr(1);
+    var username = username.substr(1);
     return "<a href=\"//twitter.com/"+ username +"\" target=\"_blank\">@"+username+"</a>";
   };
 
   var buildLinkForHashTag  = function(hashtag){
-    hashtag = hashtag.substr(1);
+    var hashtag = hashtag.substr(1);
     return "<a href=\"//twitter.com/search?q=%23"+ hashtag +"\" target=\"_blank\">#"+hashtag+"</a>";
   };
 
+  var buildLinkForStandardURL = function(link){
+    var url    = link.replace(/\bhttp(s)*:\/\//,"");
+    return "<a href=\"//"+ url +"\" target=\"_blank\">"+link+"</a>";
+  };
+
   var buildLinksForText = function(text){
+    var links = extractURLs(text);
+    if (links){
+      for (var i=0;i<links.length;i++){
+        var link = links[i];
+        var regex = new RegExp(link, "gi");
+        text = text.replace(regex, buildLinkForStandardURL(link));
+      }
+    }
+
     var userNames = extractUserNames(text);
     if (userNames){
       for (var i=0;i<userNames.length;i++){
@@ -41,6 +59,7 @@ var tweeterUtils = (function(){
         text = text.replace(regex, buildLinkForHashTag(hashTag));
       }
     }
+
     return text;
   };
 
